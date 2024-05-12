@@ -19,7 +19,7 @@
 ### Empirical
 ##### 1st, 3rd, 5th, ♭♭7, 9th
 1. Monotonic: [Qualitative](https://www.youtube.com/watch?v=585IMBb14Kg) hunter-gatherer
-2. [Pentatonic](https://en.wikipedia.org/wiki/Seven_Samurai): peasant, farmer, manufacturer, [energy](https://www.youtube.com/watch?v=_Vik6UJTFyk), deployment-telecommute
+2. [Pentatonic](https://en.wikipedia.org/wiki/Seven_Samurai): peasant, farmer, manufacturer-[compute](https://www.youtube.com/watch?v=i-o5YbNfmh0), [energy](https://www.youtube.com/watch?v=_Vik6UJTFyk), deployment-telecommute
 ### Model
 ##### 11th, 13th 
 3. [Diatonic/Mundane](https://en.wikipedia.org/wiki/The_Good,_the_Bad_and_the_Ugly): prior/accuracy
