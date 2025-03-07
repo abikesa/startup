@@ -487,12 +487,11 @@ document.write(`
 <span class="c1"># Define edges to be highlighted in black</span>
 <span class="k">def</span> <span class="nf">define_black_edges</span><span class="p">():</span>
     <span class="k">return</span> <span class="p">{</span>
-        <span class="p">(</span><span class="s1">&#39;DNA, RNA,  5%&#39;</span><span class="p">,</span> <span class="s1">&#39;PRR &amp; ILCs, 20%&#39;</span><span class="p">):</span> <span class="s1">&#39;1/99&#39;</span><span class="p">,</span>
-        <span class="p">(</span><span class="s1">&#39;Peptidoglycans, Lipoteichoics&#39;</span><span class="p">,</span> <span class="s1">&#39;PRR &amp; ILCs, 20%&#39;</span><span class="p">):</span> <span class="s1">&#39;5/95&#39;</span><span class="p">,</span>
-        <span class="p">(</span><span class="s1">&#39;Lipopolysaccharide&#39;</span><span class="p">,</span> <span class="s1">&#39;PRR &amp; ILCs, 20%&#39;</span><span class="p">):</span> <span class="s1">&#39;20/80&#39;</span><span class="p">,</span>
-        <span class="p">(</span><span class="s1">&#39;N-Formylmethionine&#39;</span><span class="p">,</span> <span class="s1">&#39;PRR &amp; ILCs, 20%&#39;</span><span class="p">):</span> <span class="s1">&#39;51/49&#39;</span><span class="p">,</span>
-        <span class="p">(</span><span class="s2">&quot;Glucans, Chitin&quot;</span><span class="p">,</span> <span class="s1">&#39;PRR &amp; ILCs, 20%&#39;</span><span class="p">):</span> <span class="s1">&#39;80/20&#39;</span><span class="p">,</span>
-        <span class="p">(</span><span class="s1">&#39;Specific Antigens&#39;</span><span class="p">,</span> <span class="s1">&#39;PRR &amp; ILCs, 20%&#39;</span><span class="p">):</span> <span class="s1">&#39;95/5&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;PD-1 &amp; CTLA-4&#39;</span><span class="p">,</span> <span class="s1">&#39;Complement System&#39;</span><span class="p">):</span> <span class="s1">&#39;1/9&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;PD-1 &amp; CTLA-4&#39;</span><span class="p">,</span> <span class="s1">&#39;Platelet System&#39;</span><span class="p">):</span> <span class="s1">&#39;1/8&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;PD-1 &amp; CTLA-4&#39;</span><span class="p">,</span> <span class="s1">&#39;Granulocyte System&#39;</span><span class="p">):</span> <span class="s1">&#39;1/7&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;PD-1 &amp; CTLA-4&#39;</span><span class="p">,</span> <span class="s1">&#39;Innate Lymphoid Cells, 5%&#39;</span><span class="p">):</span> <span class="s1">&#39;1/6&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;PD-1 &amp; CTLA-4&#39;</span><span class="p">,</span> <span class="s1">&#39;Adaptive Lymphoid Cells&#39;</span><span class="p">):</span> <span class="s1">&#39;1/5&#39;</span><span class="p">,</span>    
     <span class="p">}</span>
 
 <span class="c1"># Calculate node positions</span>
@@ -546,7 +545,7 @@ document.write(`
         <span class="n">node_size</span><span class="o">=</span><span class="mi">3000</span><span class="p">,</span> <span class="n">font_size</span><span class="o">=</span><span class="mi">9</span><span class="p">,</span> <span class="n">connectionstyle</span><span class="o">=</span><span class="s2">&quot;arc3,rad=0.2&quot;</span>
     <span class="p">)</span>
     <span class="n">nx</span><span class="o">.</span><span class="n">draw_networkx_edge_labels</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">edge_labels</span><span class="o">=</span><span class="n">edges_labels</span><span class="p">,</span> <span class="n">font_size</span><span class="o">=</span><span class="mi">8</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;OPRAH™: Task-Positive Network&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">18</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;OPRAH™: Aristotle, Monumental, SN&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">18</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 
 <span class="c1"># Run the visualization</span>
@@ -556,13 +555,13 @@ document.write(`
 </div>
 </details>
 <div class="cell_output docutils container">
-<img alt="../_images/aab8e6b47ff6a1148c3d843725e340ef0e37640270a2c99d36f2ae294b74fd50.png" src="../_images/aab8e6b47ff6a1148c3d843725e340ef0e37640270a2c99d36f2ae294b74fd50.png" />
+<img alt="../_images/7e04c65b49801e0f3e47167d4f2e2d4f6be0b80dc6d1b309799e2a9fc0864e1c.png" src="../_images/7e04c65b49801e0f3e47167d4f2e2d4f6be0b80dc6d1b309799e2a9fc0864e1c.png" />
 </div>
 </div>
 <figure class="align-default" id="id2">
 <a class="reference internal image-reference" href="figures/blanche.*"><img alt="figures/blanche.*" src="figures/blanche.*" style="width: 1px; height: 1px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 9 </span><span class="caption-text">For the eyes of the Lord run to and fro throughout the whole earth, to shew himself strong in the behalf of them whose heart is perfect toward him. Herein thou hast done foolishly: therefore from henceforth thou shalt have wars. Source: 2 Chronicles 16: 8-9. The grammar of these visuals is plain: there’s a space &amp; time for the cooperative rhythm, transactional, and adversarial.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 9 </span><span class="caption-text"><em>Dynamic Capability: Treg, PD-1, TNF-α</em>. For the eyes of the Lord run to and fro throughout the whole earth, to shew himself strong in the behalf of them whose heart is perfect toward him. Herein thou hast done foolishly: therefore from henceforth thou shalt have wars. Source: 2 Chronicles 16: 8-9. The grammar of these visuals is plain: there’s a space &amp; time for the cooperative rhythm, transactional, and adversarial. The antiquarian mode’s great error is in reverence as an end in-its-self, a static mode tied to historical victories and successes. This risks failing to recognize when elements of “self” need appraisal in case viral or malignant transformation have rendered them adversarial. But it also activately protects “self” in the midst of hightened vigilance, via a TPN PD-L1.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
