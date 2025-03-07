@@ -407,17 +407,12 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="duality">
 <span id="id1"></span><h1>Duality<a class="headerlink" href="#duality" title="Permalink to this heading">#</a></h1>
-<p>Let’s unpack how PD-1 marks a mismatch as “non-self” within the context of our immunoneural metaphor and the biological reality, keeping it clear and conversational while staying true to the science. PD-1, or Programmed Death-1, isn’t directly involved in DNA mismatch repair (MMR)—that’s the domain of proteins like MutSalpha, MutLalpha, and PCNA—but it plays a starring role in the immune system’s broader negotiation of self versus non-self. Our playful mapping casts PD-1 as a token signaling a shift from harmony to conflict when repair falters, so let’s explore how it fits into that narrative and what it actually does when mismatches tip the balance.</p>
 <figure class="align-default" id="id2">
 <a class="reference internal image-reference" href="https://raw.githubusercontent.com/meta-llama/llama3/refs/heads/main/Llama3_Repo.jpeg"><img alt="https://raw.githubusercontent.com/meta-llama/llama3/refs/heads/main/Llama3_Repo.jpeg" src="https://raw.githubusercontent.com/meta-llama/llama3/refs/heads/main/Llama3_Repo.jpeg" style="width: 70%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 17 </span><span class="caption-text">Pattern recognition and speculation are instinctive and vestigual aspects of our complex neural, endocrine, and immune systems.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 15 </span><span class="caption-text">Pattern recognition and speculation are instinctive and vestigual aspects of our complex neural, endocrine, and immune systems.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
-<p>In MMR, mismatches arise during DNA replication—think insertions, deletions, or wrong base pairs in the daughter strand. The system spots these errors using strand-specific cues, like nicks or hemimethylation, and fixes them to keep the genetic ledger intact. PD-1 doesn’t step in here; its gig is on the immune stage, where T-cells patrol for threats. Normally, T-cells use their receptors to recognize antigens presented by MHC molecules on cell surfaces. Self-antigens get a pass, thanks to tolerance mechanisms, but non-self antigens—like those from pathogens or mutated cells—trigger an attack. PD-1, a checkpoint receptor on T-cells, dials this response back when it binds to its ligands (PD-L1 or PD-L2), often expressed by healthy cells saying, “I’m one of you, chill out.” It’s a brake on the immune system’s lightsalmon fight mode, preserving paleturquoise’s cooperative peace.</p>
-<p>Now, tie this to mismatches. If MMR fails repeatedly—like in microsatellite instability seen in some cancers—unrepaired DNA errors pile up, producing mutant proteins. These can become neoantigens, novel peptides that MHC presents as “not quite self.” T-cells might spot them and gear up to attack, but tumors often crank up PD-L1 expression to spoof that “I’m fine” signal, binding PD-1 and lulling the T-cells into inaction. In our metaphor, when MMR can’t fix the mismatch, the system shifts from “self” (replication’s harmony) to a gray zone of “conditional engagement.” If PD-1’s brake fails or gets bypassed—say, via checkpoint inhibitors in cancer therapy—the immune system marks those mismatch-laden cells as “non-self,” unleashing lightsalmon’s adversarial fury. The mismatch isn’t flagged by PD-1 directly; it’s the downstream consequence of repair failure that PD-1 either restrains or, when overridden, escalates.</p>
-<p>Mechanistically, PD-1 marks “non-self” by its absence of action rather than an active tag. When PD-L1 binds PD-1, it recruits phosphatases like SHP-2, which dampen T-cell signaling pathways (e.g., TCR and CD28), reducing cytokine production and proliferation—keeping the response in check. If mismatches spawn neoantigens and PD-1 isn’t engaged (no PD-L1 or inhibitor drugs block it), T-cells stay activated, recognizing the altered cells as foreign. In our layer 4 dance, lightgreen’s transactional toggle—here, PD-1’s on/off switch—decides the fate: cooperation if suppressed, conflict if unleashed. Evidence backs this: tumors with high MMR defects (e.g., Lynch syndrome) respond better to PD-1 inhibitors, as unrepaired mismatches churn out neoantigens that T-cells can’t ignore once the brake’s off.</p>
-<p>So, PD-1 doesn’t literally mark a DNA mismatch as “non-self”—that’s MMR’s job failing upstream. Instead, it’s the immune system’s gatekeeper, modulating whether mismatch-driven anomalies stay tolerated or get flagged for destruction. In our prankish map, it’s the token that tips the equilibrium: when repair breaks down and self becomes strange, PD-1’s role—or its override—casts the die for fight over feed, marking “non-self” not with a label, but with the battle that ensues.</p>
 <div class="cell tag_hide-input docutils container">
 <details class="hide above-input">
 <summary aria-label="Toggle hidden content">
@@ -486,10 +481,11 @@ document.write(`
 <span class="c1"># Define edges to be highlighted in black</span>
 <span class="k">def</span> <span class="nf">define_black_edges</span><span class="p">():</span>
     <span class="k">return</span> <span class="p">{</span>
-        <span class="p">(</span><span class="s1">&#39;PRR &amp; ILCs, 20%&#39;</span><span class="p">,</span> <span class="s1">&#39;CD4+&#39;</span><span class="p">):</span> <span class="s1">&#39;80/20&#39;</span><span class="p">,</span>
-        <span class="p">(</span><span class="s1">&#39;CD4+&#39;</span><span class="p">,</span> <span class="s1">&#39;TNF-α, IL-6, IFN-γ&#39;</span><span class="p">):</span> <span class="s1">&#39;5/95&#39;</span><span class="p">,</span>
-        <span class="p">(</span><span class="s1">&#39;CD4+&#39;</span><span class="p">,</span> <span class="s1">&#39;PD-1 &amp; CTLA-4&#39;</span><span class="p">):</span> <span class="s1">&#39;20/80&#39;</span><span class="p">,</span>
-        <span class="p">(</span><span class="s1">&#39;CD4+&#39;</span><span class="p">,</span> <span class="s1">&#39;Tregs, IL-10, TGF-β, 20%&#39;</span><span class="p">):</span> <span class="s1">&#39;51/49&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;Tregs, IL-10, TGF-β, 20%&#39;</span><span class="p">,</span> <span class="s1">&#39;Complement System&#39;</span><span class="p">):</span> <span class="s1">&#39;1/99&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;Tregs, IL-10, TGF-β, 20%&#39;</span><span class="p">,</span> <span class="s1">&#39;Platelet System&#39;</span><span class="p">):</span> <span class="s1">&#39;5/95&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;Tregs, IL-10, TGF-β, 20%&#39;</span><span class="p">,</span> <span class="s1">&#39;Granulocyte System&#39;</span><span class="p">):</span> <span class="s1">&#39;10/90&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;Tregs, IL-10, TGF-β, 20%&#39;</span><span class="p">,</span> <span class="s1">&#39;Innate Lymphoid Cells, 5%&#39;</span><span class="p">):</span> <span class="s1">&#39;15/85&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;Tregs, IL-10, TGF-β, 20%&#39;</span><span class="p">,</span> <span class="s1">&#39;Adaptive Lymphoid Cells&#39;</span><span class="p">):</span> <span class="s1">&#39;20/80&#39;</span>
     <span class="p">}</span>
 
 <span class="c1"># Calculate node positions</span>
@@ -543,7 +539,7 @@ document.write(`
         <span class="n">node_size</span><span class="o">=</span><span class="mi">3000</span><span class="p">,</span> <span class="n">font_size</span><span class="o">=</span><span class="mi">9</span><span class="p">,</span> <span class="n">connectionstyle</span><span class="o">=</span><span class="s2">&quot;arc3,rad=0.2&quot;</span>
     <span class="p">)</span>
     <span class="n">nx</span><span class="o">.</span><span class="n">draw_networkx_edge_labels</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">edge_labels</span><span class="o">=</span><span class="n">edges_labels</span><span class="p">,</span> <span class="n">font_size</span><span class="o">=</span><span class="mi">8</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;OPRAH™: Nonself &amp; the Salient Network&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">18</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;OPRAH™: Aristotle, Monumental, SN&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">18</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 
 <span class="c1"># Run the visualization</span>
@@ -553,13 +549,13 @@ document.write(`
 </div>
 </details>
 <div class="cell_output docutils container">
-<img alt="../_images/eea879baf851a421b2d818881ada2190abad4691b952eb7c8abd271dcf6b6796.png" src="../_images/eea879baf851a421b2d818881ada2190abad4691b952eb7c8abd271dcf6b6796.png" />
+<img alt="../_images/788de9003d5ac61aeb52dc4cda1786a7282d014543dce8123940e030f6684ef4.png" src="../_images/788de9003d5ac61aeb52dc4cda1786a7282d014543dce8123940e030f6684ef4.png" />
 </div>
 </div>
 <figure class="align-default" id="id3">
 <a class="reference internal image-reference" href="figures/blanche.*"><img alt="figures/blanche.*" src="figures/blanche.*" style="width: 1px; height: 1px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 18 </span><span class="caption-text"><em>PD-1 receptors represent “self” for preservation in context of Angigen.MHC-I.APC vigilantéism</em>. Here’s an expanded paragraph based on your input, with some tweaks for accuracy and clarity:
+<p><span class="caption-number">Fig. 16 </span><span class="caption-text"><em>PD-1 receptors represent “self” for preservation in context of Angigen.MHC-I.APC vigilantéism</em>. Here’s an expanded paragraph based on your input, with some tweaks for accuracy and clarity:
 PD-1 (Programmed Death-1) receptors play a critical role in immune regulation by signaling “self” to preserve tolerance and prevent autoimmunity, particularly in the context of antigen presentation via MHC-I (Major Histocompatibility Complex Class I) by antigen-presenting cells (APCs). These receptors, expressed primarily on T cells, act as immune checkpoints, modulating the immune response when engaged by their ligands, PD-L1 or PD-L2, which are often presented by APCs or other cells. This interaction helps distinguish self from non-self, curbing excessive immune activation that could harm healthy tissues. The concept of “APC vigilantism” could metaphorically describe the APCs’ role in diligently monitoring and presenting antigens to T cells, while PD-1 ensures this vigilance doesn’t spiral into uncontrolled aggression against the body’s own cells. Thus, PD-1 serves as a guardian of immune homeostasis, balancing the need to eliminate threats with the preservation of self-integrity.
 Let me know if you’d like further adjustments!</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
 </figcaption>
