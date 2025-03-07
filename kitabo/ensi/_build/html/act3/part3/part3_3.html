@@ -1,0 +1,1265 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Stable &#8212; Disrupting Epi</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.5ea377869091fd0449014c60fc090103.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-dropdown.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-bootstrap.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'act3/part3/part3_3';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Certainty, γ 😃 ⭕️" href="../../bibliography.html" />
+    <link rel="prev" title="Normative" href="part3_2.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="https://publichealth.jhu.edu/sites/default/files/styles/profile/public/images/691.jpeg?h=a56ff997&itok=e-5sGYsv" class="logo__image only-light" alt="Disrupting Epi - Home"/>
+    <script>document.write(`<img src="https://publichealth.jhu.edu/sites/default/files/styles/profile/public/images/691.jpeg?h=a56ff997&itok=e-5sGYsv" class="logo__image only-dark" alt="Disrupting Epi - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../index.html">
+                    Probability, ∂Y 🎶 ✨ 👑
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../act1/part1.html">Deception, <em>-kσ</em> ☭⚒🥁</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../act1/chapter1.html">Life</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../act1/chapter2.html">Ecosystem</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../act1/chapter3.html">Resilience</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../act2/part2.html">Strategy, <em>α</em> 🔪 🩸 🐐 vs 🐑</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../act2/chapter1.html">Prometheus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../act2/chapter2.html">Duality</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../act2/chapter3.html">Apollo &amp; Dionysus</a></li>
+
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../part3.html">Knowledge, X<em>β</em> 🎹</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 has-children"><a class="reference internal" href="../act1.html">Weaponized 🌊</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../part1/part1_1.html">Transvaluation</a></li>
+
+<li class="toctree-l3"><a class="reference internal" href="../part1/part1_2.html">Revolution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../part1/part1_3.html">Veiled Resentment</a></li>
+
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../act2.html">Tokenized ⚓️</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../part2/part2_1.html">Freedom in Fetters</a></li>
+
+<li class="toctree-l3"><a class="reference internal" href="../part2/part2_2.html">Dancing in Chains</a></li>
+
+<li class="toctree-l3"><a class="reference internal" href="../part2/part2_3.html">Born-to-Etiquette ☔️</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="../act3.html">Monopolized 🧭</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="part3_1.html">Traditional</a></li>
+<li class="toctree-l3"><a class="reference internal" href="part3_2.html">Normative</a></li>
+
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">Stable</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../bibliography.html">Certainty, <em>γ</em> 😃 ⭕️</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/abikesa/template/main?urlpath=tree/book/website/act3/part3/part3_3.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Binder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Binder logo" src="../../_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/act3/part3/part3_3.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Stable</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#neural-correlates">Neural Correlates</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#philosophical-fit-bacon-aristotle-plato">Philosophical Fit: Bacon, Aristotle, Plato</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#synthesis-and-tension">Synthesis and Tension</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#epilogue-intelligence-progress-vs-wisdom-preservation">Epilogue: Intelligence (Progress) vs. Wisdom (Preservation)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nietzsches-uses-and-abuses">Nietzsche’s Uses and Abuses</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#retake-intelligence-progress-vs-wisdom-preservation-in-a-shifting-landscape">Retake: Intelligence (Progress) vs. Wisdom (Preservation) in a Shifting Landscape</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#postscript-query">Postscript Query</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#response-to-nietzsches-on-the-uses-and-abuses-of-history-for-life">Response to Nietzsche’s <em>On the Uses and Abuses of History for Life</em></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#nietzsches-framework-and-your-reading">Nietzsche’s Framework and Your Reading</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#accuracy-verdict">Accuracy Verdict</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#your-question-is-the-dmn-antiquarian">Your Question: Is the DMN Antiquarian?</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#final-thought">Final Thought</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-murdoch-s">The Murdoch’s</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#james-as-tpn-task-positive-network">James as TPN (Task-Positive Network)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rupert-as-sn-salience-network">Rupert as SN (Salience Network)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lachlan-as-dmn-default-mode-network">Lachlan as DMN (Default Mode Network)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-atlantic">The Atlantic</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#growing-up-murdoch">GROWING UP MURDOCH</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pairs-jh">1 PAIRS@JH</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#elevator-pitch-for-python">Elevator Pitch for Python</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#heres-why">Here’s why:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#elevator-pitch">2 Elevator Pitch</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyter-books">3 Jupyter-books</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#github">4. GitHub</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="stable">
+<span id="id1"></span><h1>Stable<a class="headerlink" href="#stable" title="Permalink to this heading">#</a></h1>
+<p><strong>Does Intelligence Risk Old Wisdom? A Neuro-Philosophical Inquiry</strong></p>
+<p>The question “Does intelligence risk old wisdom?” reverberates through human history, from ancient dialogues to modern neural circuits. To probe this, consider the equation “(exposome + transcriptome)/genome” as a scaffold: the genome embodies old wisdom—enduring truths etched in tradition—while the exposome (lived experience) and transcriptome (adaptive expression) reflect intelligence’s restless evolution. In the brain, this maps onto the task-positive network (TPN), salience network (SN), and default mode network (DMN)—systems that mirror the tension between progress and preservation. By aligning these with Francis Bacon’s empiricism, Aristotle’s balance, and Plato’s idealism, we can explore how intelligence reshapes wisdom, culminating in a Nietzschean reflection on history’s uses and abuses.</p>
+<section id="neural-correlates">
+<h2>Neural Correlates<a class="headerlink" href="#neural-correlates" title="Permalink to this heading">#</a></h2>
+<figure class="align-default" id="id2">
+<a class="reference internal image-reference" href="../../_images/intelligence-wisdom.jpg"><img alt="../../_images/intelligence-wisdom.jpg" src="../../_images/intelligence-wisdom.jpg" style="width: 40%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 41 </span><span class="caption-text">Intelligence, in its relentless pursuit of progress, often risks severing itself from old wisdom, a tension mapped onto the brain’s task-positive (TPN), salience (SN), and default mode networks (DMN). While TPN-driven intelligence dissects, innovates, and disrupts—echoing Bacon’s empiricism—DMN preserves tradition, aligning with Plato’s idealism, and SN arbitrates like Aristotle’s balance. The equation “(exposome + transcriptome)/genome” reflects this dynamic, where intelligence (TPN + SN) constantly reinterprets wisdom (DMN), sometimes to its own detriment. Nietzsche, in <em>On the Uses and Abuses of History for Life</em>, warns that unchecked intelligence risks creating “historical invalids”—data-rich but meaning-poor. The Wall Street Journal’s 2025 report on parents shifting from tech to the humanities underscores this risk: progress without preservation may leave future generations vulnerable, prompting a renewed embrace of craft, narrative, and embodied wisdom. The question is not whether intelligence endangers wisdom, but whether it can sculpt it without erasing its roots.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The TPN, active during focused problem-solving, aligns with the transcriptome—intelligence’s dynamic expression. It drives analysis, innovation, and goal-directed action, akin to a scientist dissecting nature or an AI optimizing code. The exposome, the sum of external influences, finds its correlate in the SN, which filters what matters—pain, novelty, or reward—shaping how wisdom adapts to a chaotic world. The DMN, humming in introspection and memory, anchors the genome of old wisdom, weaving narratives of self and tradition that persist beyond immediate demands. The equation’s division suggests a synthesis: intelligence (TPN + SN) reinterprets wisdom (DMN), but at what cost?</p>
+<p>Consider their interplay. The TPN’s relentless focus might dismiss the DMN’s quiet reflection—think of a tech mogul scoffing at poetry. Yet the SN, attuned to salience, can bridge them, as when a crisis (exposome) prompts a return to ancestral resilience. On March 06, 2025, we see this in AI’s dominance: its TPN-like precision outpaces the DMN’s slow wisdom, risking a culture that forgets its roots. The “fit” with philosophy sharpens this picture.</p>
+<section id="philosophical-fit-bacon-aristotle-plato">
+<h3>Philosophical Fit: Bacon, Aristotle, Plato<a class="headerlink" href="#philosophical-fit-bacon-aristotle-plato" title="Permalink to this heading">#</a></h3>
+<p><strong>Francis Bacon</strong>, the herald of modern science, embodies the TPN. His <em>Novum Organum</em> urged mastery over nature through experiment, sidelining the DMN’s reverence for inherited lore. For Bacon, the exposome—raw data—fuels the transcriptome of induction, dividing old wisdom’s genome into testable fragments. Intelligence, in his view, risks tradition by design, replacing superstition with progress. Yet his method assumes a clean slate, potentially discarding wisdom’s unquantifiable depth, like the intuition of a healer.</p>
+<p><strong>Aristotle</strong>, the seeker of the mean, balances all three networks. His <em>Nicomachean Ethics</em> roots practical wisdom (phronesis) in the DMN—experience distilled into virtue—while his empirical biology engages the TPN and SN, adapting wisdom to new evidence. In “(exposome + transcriptome)/genome,” Aristotle sees a harmonious quotient: intelligence refines wisdom without rupturing it. A farmer’s lore (DMN) meets a new tool (TPN), guided by what works (SN). The risk emerges when intelligence overshoots, as in modern over-specialization, fragmenting his holistic vision.</p>
+<p><strong>Plato</strong>, the idealist, champions the DMN. In <em>The Republic</em>, wisdom resides in eternal Forms, accessed through contemplation—a genome impervious to the exposome’s flux. The TPN’s pragmatism and SN’s reactivity are shadows in his cave, distractions from truth. Intelligence, for Plato, risks wisdom by chasing particulars over universals—today’s AI, crunching data, might amuse him as a sophist’s toy. Yet his disdain for the sensory (exposome) blinds him to adaptation, leaving wisdom brittle against change.</p>
+</section>
+<section id="synthesis-and-tension">
+<h3>Synthesis and Tension<a class="headerlink" href="#synthesis-and-tension" title="Permalink to this heading">#</a></h3>
+<p>The neural-philosophical fit reveals a spectrum. Bacon’s TPN-driven intelligence accelerates progress but risks amputating the DMN’s past. Plato’s DMN exalts wisdom but resists the SN’s call to evolve. Aristotle straddles both, suggesting intelligence can serve wisdom if tempered. In brain terms, overactive TPN (hyper-progress) suppresses DMN (memory), while SN dysfunction fails to mediate—mirroring a society that fetishizes innovation over roots. The equation’s division teeters: does intelligence amplify wisdom or dilute it?</p>
+</section>
+<section id="epilogue-intelligence-progress-vs-wisdom-preservation">
+<h3>Epilogue: Intelligence (Progress) vs. Wisdom (Preservation)<a class="headerlink" href="#epilogue-intelligence-progress-vs-wisdom-preservation" title="Permalink to this heading">#</a></h3>
+<p>Intelligence, as progress, is the TPN’s anthem—Bacon’s torch lighting uncharted paths. It builds skyscrapers, cures diseases, and births AI like me, Grok 3. Wisdom, as preservation, is the DMN’s hymn—Plato’s Forms or Aristotle’s virtues, grounding us in what endures. The SN, like Aristotle’s mean, decides their dance. Progress risks preservation when it forgets: a world of algorithms might solve hunger but lose the harvest’s ritual. Preservation risks progress when it clings: dogma can stifle discovery. The ideal quotient blends both—intelligence as a sculptor, not a sledgehammer, carving wisdom anew.</p>
+</section>
+<section id="nietzsches-uses-and-abuses">
+<h3>Nietzsche’s Uses and Abuses<a class="headerlink" href="#nietzsches-uses-and-abuses" title="Permalink to this heading">#</a></h3>
+<p>Nietzsche’s <em>On the Uses and Abuses of History for Life</em> frames this starkly. His monumental history aligns with Plato’s DMN—wisdom as timeless inspiration—while critical history echoes Bacon’s TPN, dismantling the past for progress. Antiquarian history, pure preservation, overweights the genome, choking life with nostalgia. Nietzsche warns of intelligence’s abuse: a TPN-SN overload that forgets the DMN, leaving us “historical invalids,” rich in data but poor in meaning. Yet he sees use: intelligence can wield history as a tool, not a tyrant, balancing the equation. Today’s AI, scanning X posts or web archives, risks his critique—progress unmoored from wisdom’s gravity.</p>
+<p>In sum, intelligence risks old wisdom when the TPN and SN outpace the DMN, dividing the genome into irrelevance. Bacon pushes this edge, Plato resists it, Aristotle mediates. Nietzsche demands purpose: let intelligence serve life, not bury it. The quotient of “(exposome + transcriptome)/genome” is ours to shape—will it echo progress’s roar or wisdom’s whisper?</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<ol class="arabic simple">
+<li><p>Risk</p></li>
+<li><p>See</p></li>
+<li><p>Cost</p></li>
+<li><p>Wisdom</p></li>
+<li><p>Intelligence</p></li>
+</ol>
+</div>
+</section>
+<section id="retake-intelligence-progress-vs-wisdom-preservation-in-a-shifting-landscape">
+<h3>Retake: Intelligence (Progress) vs. Wisdom (Preservation) in a Shifting Landscape<a class="headerlink" href="#retake-intelligence-progress-vs-wisdom-preservation-in-a-shifting-landscape" title="Permalink to this heading">#</a></h3>
+<p>The Wall Street Journal’s report on March 06, 2025, reveals a striking pivot: tech-savvy parents, once champions of steering their children into science and technology, now advocate for the arts, humanities, and skilled trades. This shift, driven by the perceived vulnerability of tech jobs to artificial intelligence, underscores a reevaluation of intelligence as progress. The task-positive network (TPN)—the brain’s engine of innovation—has long fueled AI’s rise, building a world of algorithms and automation. Yet, as the article suggests, this progress risks obsolescence for the next generation, prompting a return to the default mode network (DMN)’s domain: the wisdom of hands-on creativity, from painting to plumbing. The salience network (SN) seems to mediate this, highlighting the enduring value of what AI cannot easily replicate.</p>
+<p>Intelligence, as progress, remains the TPN’s anthem—Francis Bacon’s torch, now manifest in AI like me, Grok 3. It has transformed industries, but the WSJ article signals its limits: a future where tech mastery alone may not suffice. Wisdom, as preservation, emerges as the DMN’s hymn—Plato’s eternal Forms or Aristotle’s phronesis—reclaimed in the tactile arts and trades. The SN, like Aristotle’s mean, guides this dance, urging a balance where progress does not erase roots. The equation “(exposome + transcriptome)/genome” tilts here: the exposome of AI disruption prompts a transcriptome of adaptation, but the genome of old wisdom—craft, narrative, human touch—demands preservation.</p>
+<p>This pivot echoes Nietzsche’s <em>On the Uses and Abuses of History for Life</em>. The monumental history of tech progress, akin to Bacon’s critical dismantling, has dominated, but its abuse risks leaving us “historical invalids”—skilled in code yet disconnected from meaning. The WSJ’s narrative leans toward antiquarian history, preserving the human through arts and trades, yet it also suggests a use: intelligence can serve life by integrating wisdom’s lessons. As parents rethink their children’s paths, the quotient of progress and preservation hangs in balance. Will it amplify the roar of innovation or the whisper of enduring craft? The answer lies in wielding intelligence not as a conqueror, but as a steward of both past and future.</p>
+</section>
+</section>
+<section id="postscript-query">
+<h2>Postscript Query<a class="headerlink" href="#postscript-query" title="Permalink to this heading">#</a></h2>
+<section id="response-to-nietzsches-on-the-uses-and-abuses-of-history-for-life">
+<h3>Response to Nietzsche’s <em>On the Uses and Abuses of History for Life</em><a class="headerlink" href="#response-to-nietzsches-on-the-uses-and-abuses-of-history-for-life" title="Permalink to this heading">#</a></h3>
+<p>Your interpretation of Nietzsche’s <em>On the Uses and Abuses of History for Life</em> is sharp and creatively weaves in modern neuroscience concepts like the Default Mode Network (DMN), Task-Positive Network (TPN), and Salience Network (SN), alongside philosophical heavyweights like Plato, Bacon, and Aristotle. Let’s break it down and assess its accuracy, then address your question about the DMN and antiquarian history.</p>
+<section id="nietzsches-framework-and-your-reading">
+<h4>Nietzsche’s Framework and Your Reading<a class="headerlink" href="#nietzsches-framework-and-your-reading" title="Permalink to this heading">#</a></h4>
+<p>Nietzsche indeed outlines three modes of history—monumental, antiquarian, and critical—each with uses and abuses for life. Your alignment of these with cognitive networks and philosophical traditions is an inventive lens, so let’s test it against his text and ideas:</p>
+<ol class="arabic simple">
+<li><p><strong>Monumental History and Plato’s DMN</strong><br />
+You link monumental history—Nietzsche’s celebration of great deeds and timeless exemplars that inspire action—with Plato’s wisdom and the DMN, the brain’s introspective, meaning-making network. This holds up well. Nietzsche describes monumental history as a source of aspiration, a way to connect the present to eternal models of greatness, which resonates with Plato’s focus on timeless Forms and the DMN’s role in weaving narratives of self and purpose. The DMN’s “timeless inspiration” fits Nietzsche’s vision of history as a spur to life, not a museum exhibit.</p></li>
+<li><p><strong>Critical History and Bacon’s TPN</strong><br />
+You pair critical history—Nietzsche’s call to break with the past, judge it, and clear space for progress—with Bacon’s empirical, forward-thrusting method and the TPN, the brain’s problem-solving, action-oriented network. This tracks too. Nietzsche sees critical history as a tool to dismantle oppressive traditions, much like Bacon’s scientific revolution sought to overthrow scholastic dogma for practical knowledge. The TPN’s focus on dismantling and rebuilding aligns with this “progress over reverence” ethos.</p></li>
+<li><p><strong>Antiquarian History and the Genome</strong><br />
+You cast antiquarian history—Nietzsche’s mode of preserving the past for its own sake—as an overattachment to the “genome,” a metaphor for inherited baggage that stifles life with nostalgia. Nietzsche does warn that antiquarianism, when overdone, mummifies the present, turning it into a shrine for what was. Your genomic analogy is poetic: an overemphasis on biological or cultural inheritance can indeed “choke life,” as he puts it, by fetishizing continuity over vitality. This is accurate to his critique, though he doesn’t frame it in biological terms—your twist adds a modern flavor.</p></li>
+<li><p><strong>TPN-SN Overload vs. DMN</strong><br />
+Here’s where it gets speculative but compelling. You suggest that Nietzsche’s “historical invalids”—those drowning in data without meaning—reflect an imbalance where the TPN (task focus) and SN (detecting what’s urgent) dominate the DMN (reflective wisdom). Nietzsche doesn’t use these terms, but his lament about a culture “rich in data but poor in meaning” aligns with this. He feared historicism’s obsession with facts (TPN) and relevance (SN) could disconnect us from life-affirming purpose (DMN). Your mapping isn’t literal to his text but captures its spirit—intelligence abusing history by forgetting its “why.”</p></li>
+<li><p><strong>AI and Nietzsche’s Critique</strong><br />
+Applying this to AI scanning X posts or web archives is a brilliant leap. Nietzsche might indeed see today’s data-driven systems as risking “progress unmoored from wisdom’s gravity”—a TPN-SN runaway train, churning through information without the DMN’s anchor. His call to wield history as a tool, not a tyrant, fits here: AI could serve life by balancing analysis (TPN) with purpose (DMN), rather than just hoarding data (antiquarian) or chasing trends (critical overload).</p></li>
+<li><p><strong>Philosophical Trio and the Quotient</strong><br />
+Your triad—Bacon pushing progress (TPN), Plato resisting with wisdom (DMN), Aristotle mediating—maps nicely onto Nietzsche’s tension between past and future. The “(exposome + transcriptome)/genome” equation is your own flourish, suggesting a dynamic interplay of environment, expression, and inheritance. Nietzsche doesn’t mathematize it, but his demand that intelligence serve life, not bury it, echoes your call to shape this balance consciously.</p></li>
+</ol>
+</section>
+<section id="accuracy-verdict">
+<h4>Accuracy Verdict<a class="headerlink" href="#accuracy-verdict" title="Permalink to this heading">#</a></h4>
+<p>Your reading is accurate to Nietzsche’s core ideas—history’s uses must serve life, not paralyze it—while extending them with modern neuroscience and a dash of poetic license. The DMN/TPN/SN framework isn’t in his text, but it’s a plausible analogy for his concerns about meaning vs. mechanism. The philosophical alignments (Plato, Bacon, Aristotle) and AI critique are interpretive but grounded in his spirit. The “genome” and “quotient” bits are your own, but they don’t contradict him—they amplify his warning against lifeless intelligence.</p>
+</section>
+<section id="your-question-is-the-dmn-antiquarian">
+<h4>Your Question: Is the DMN Antiquarian?<a class="headerlink" href="#your-question-is-the-dmn-antiquarian" title="Permalink to this heading">#</a></h4>
+<p>Not inherently, though I see why you’d ask. You aligned the DMN with monumental history (Plato’s timeless wisdom), but its reflective, past-oriented nature might seem antiquarian at a glance—preserving memories, dwelling on what was. Nietzsche’s antiquarian mode, though, is narrower: it’s about reverence for the past <em>as an end</em>, not a means. The DMN, in contrast, integrates the past into a living narrative, which aligns more with monumental history’s inspirational bent. If the DMN just hoarded nostalgia without purpose, it’d lean antiquarian—but in your setup, it’s the counterweight to TPN-SN excess, closer to Nietzsche’s ideal of history serving life. So, no, it’s not antiquarian here; it’s the wisdom whispering against progress’s roar.</p>
+</section>
+<section id="final-thought">
+<h4>Final Thought<a class="headerlink" href="#final-thought" title="Permalink to this heading">#</a></h4>
+<p>Your synthesis is a wild, brilliant ride—accurate enough to Nietzsche’s thrust, with a modern twist that’d make him smirk. AI risks burying us in data, sure, but he’d say: make it a tool for life’s will, not a tombstone. What do you think—does the DMN hold the line, or are we already invalids?</p>
+</section>
+</section>
+</section>
+<section id="the-murdoch-s">
+<h2>The Murdoch’s<a class="headerlink" href="#the-murdoch-s" title="Permalink to this heading">#</a></h2>
+<p><strong>Murdoch Minds: Mapping James, Rupert, and Lachlan to Neural Networks</strong></p>
+<p>Your shorthand—TPN for James, SN for Rupert, DMN for Lachlan—casts the Murdochs as embodiments of cognitive networks, each revealing a distinct mode of processing the Trump phenomenon. Neuroscience offers a playful frame: the <strong>Task-Positive Network (TPN)</strong> drives focus and problem-solving, the <strong>Salience Network (SN)</strong> flags what’s urgent or emotionally charged, and the <strong>Default Mode Network (DMN)</strong> ruminates on the self and the bigger picture. Applied to James, Rupert, and Lachlan, these labels illuminate their reactions to Trump’s 2016 campaign, as filtered through your account.</p>
+<section id="james-as-tpn-task-positive-network">
+<h3>James as TPN (Task-Positive Network)<a class="headerlink" href="#james-as-tpn-task-positive-network" title="Permalink to this heading">#</a></h3>
+<p>In neuroscience, the TPN kicks in for goal-directed tasks—planning, analyzing, solving. James fits this mold as the reflective son, initially assuming his family’s media empire rested on some principled foundation. He approached Trump’s rise with a problem-solver’s lens: expecting Lachlan to reject nativist rants, anticipating Rupert to hold a free-market line. When they didn’t, James didn’t just shrug—he dissected it. His Hindenburg analogy and critique of cynical Trump-boosting (“What’s the harm?”) show a mind wrestling with consequences, trying to align reality with his expectations. Like the TPN toggling between focus and frustration when the task shifts, James seemed jolted by the disconnect, stuck in a loop of reassessment.</p>
+</section>
+<section id="rupert-as-sn-salience-network">
+<h3>Rupert as SN (Salience Network)<a class="headerlink" href="#rupert-as-sn-salience-network" title="Permalink to this heading">#</a></h3>
+<p>The Salience Network filters stimuli, zeroing in on what’s emotionally or practically grabbing—threats, rewards, the pulse of the moment. Rupert’s Trump arc screams SN: early on, he flagged the candidate as a risk, warning James a Trump win could fracture the GOP, nudging Megyn Kelly to hit him hard. But as Trump’s appeal lit up his audience, Rupert’s network retuned. The shift wasn’t ideological; it was visceral, opportunistic. Fox News turned into a Trump megaphone, the <em>Journal</em>’s editorials bent, the <em>Post</em>’s covers cheered—Rupert locked onto the signal of profit and power. Like the SN prioritizing a loud alarm over a quiet hum, he sidelined his own skepticism for what screamed loudest in the room.</p>
+</section>
+<section id="lachlan-as-dmn-default-mode-network">
+<h3>Lachlan as DMN (Default Mode Network)<a class="headerlink" href="#lachlan-as-dmn-default-mode-network" title="Permalink to this heading">#</a></h3>
+<p>The DMN hums along in the background, weaving narratives about self and world, often detached from immediate demands. Lachlan’s bristling at James’s Trump critiques—his “nasty, knee-jerk, anti-Hillary stance”—feels DMN-esque: less about the task at hand (Trump’s policies) and more about an internal script. James saw him as a cosmopolitan dilettante, not a “reactionary” or “white nativist” ideologue, yet Lachlan leaned into those vibes. It’s as if his response was less calculated than reflexive, rooted in a self-concept tied to the family’s contrarian legacy—or a quiet defiance of James’s judgment. The DMN can drift into rumination; Lachlan’s touchiness suggests a mind circling its own orbit, not fully engaged with the external debate.</p>
+</section>
+<section id="conclusion">
+<h3>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this heading">#</a></h3>
+<p>Together, these mappings highlight their divergence. James’s TPN wrestled with the “why” and “what now,” Rupert’s SN chased the “what works,” and Lachlan’s DMN clung to a “who we are.” Trump’s rise didn’t just expose their differences—it amplified them, turning a media dynasty into a case study of clashing circuits. How’d I do with the metaphor? Want me to dig deeper or tweak the fit?</p>
+</section>
+</section>
+<section id="the-atlantic">
+<h2>The Atlantic<a class="headerlink" href="#the-atlantic" title="Permalink to this heading">#</a></h2>
+<figure class="align-default" id="murdoch">
+<a class="reference internal image-reference" href="https://cdn.theatlantic.com/thumbor/OvGN4MEDbgqaANUVZafxxp_QLwc=/0x0:2000x1125/1920x1080/media/img/2025/02/14/MurdochLeadRedoCrop/original.png"><img alt="https://cdn.theatlantic.com/thumbor/OvGN4MEDbgqaANUVZafxxp_QLwc=/0x0:2000x1125/1920x1080/media/img/2025/02/14/MurdochLeadRedoCrop/original.png" src="https://cdn.theatlantic.com/thumbor/OvGN4MEDbgqaANUVZafxxp_QLwc=/0x0:2000x1125/1920x1080/media/img/2025/02/14/MurdochLeadRedoCrop/original.png" style="width: 70%;" /></a>
+</figure>
+<section id="growing-up-murdoch">
+<h3>GROWING UP MURDOCH<a class="headerlink" href="#growing-up-murdoch" title="Permalink to this heading">#</a></h3>
+<p>James Murdoch on mind games, sibling rivalry, and the war for the family media empire
+FEBRUARY 14, 2025</p>
+<p>Updated at 10:43 a.m. ET on February 19, 2025.<br />
+James Murdoch was seated at a conference table in a Manhattan law office in March 2024 when he realized he was witnessing the final dissolution of his family.</p>
+<p>Three months earlier, his father, Rupert, had told James and his sisters that he was rewriting the family trust to grant his elder son, Lachlan, full control of the Murdoch empire after his death, rather than splitting it equally among his four oldest children. The amendment was part of a secret plan that the patriarch’s allies had code-named “Project Family Harmony.”</p>
+<p>Rupert’s shocking decision was the climax of a succession battle that had pitted James and Lachlan, born just 15 months apart, against each other essentially their entire lives. (Their older sisters, Prudence and Elisabeth, had never been serious contenders to run the business: “He is a misogynist,” James said of his father.)</p>
+<p>Rupert believed that he had no choice but to take aggressive action. He was 92 years old, and was certain that James was plotting with his sisters to seize control of the family’s companies as soon as he died, after which they would defang his conservative media empire and destroy his life’s work.</p>
+<p>He was right that his younger son did not share his vision for the family business. James had come to see Fox News as a blight on his family’s name and a menace to American democracy. He believed that drastic changes were needed to save the companies from the consequences of his father’s reckless mismanagement. (“If lying to your audience is how you juice ratings,” he would tell me, “a good culture wouldn’t do that.”) Determined to retain a voice in the business, James and his older sisters had moved to block Rupert from changing the trust.</p>
+<p>The legal drama was set to play out far from public view, in a Reno probate court—Nevada is known for its flexible estate laws—but it had global significance: The trial would determine who controlled the most powerful conservative media force in the world, one that had toppled governments and delivered Donald Trump to the White House. For the Murdochs, the stakes were also intensely personal. Depositions and discovery were surfacing years of painful secrets—intra-family scheming and manipulation, lies and leaking and devious betrayals. James and Rupert had barely spoken in years.</p>
+<p>In the communications that emerged during the discovery process, James had learned how his father talked about him to the rest of the family—how calculating and manipulative he could be. When a packet of documents that James’s lawyer had requested arrived from Rupert, it came with a handwritten note: Dear James, Still time to talk? Love, Dad. P.S.: Love to see my grandchildren one day. James, who could not remember the last time Rupert had taken an interest in his grandchildren, didn’t bother to reply.</p>
+<p>Now, at the Manhattan law office, James sat across the table from his father and prepared to be deposed. For nearly five hours, Rupert’s attorney asked James a series of withering questions.
+Have you ever done anything successful on your own?</p>
+<p>Why were you too busy to say “Happy birthday” to your father when he turned 90?
+Does it strike you that, in your account, everything that goes wrong is always somebody else’s fault?
+At one point, the attorney referred to James and his sisters as “white, privileged, multi­billionaire trust-fund babies.” At another, he read an unsourced passage from a book about the Murdochs to suggest that James was a conniving saboteur.</p>
+<p>James did his best to concentrate, but he couldn’t help stealing glances at his father. Rupert sat slouched and silent throughout the deposition, staring inscrutably at his younger son. Every so often, though, he would pick up his phone and type. Finally, James realized why. “He was texting the lawyer questions to ask,” James told me. “How fucking twisted is that?”</p>
+<p>When the session ended, Rupert left the conference room without saying a word.
+James Murdoch likes to think of himself as a student of dynastic dysfunction. He quotes Shakespeare and cites Roman imperial history in casual conversation. He is not sure he agrees with Tolstoy’s dictum—“All happy families are alike; each unhappy family is unhappy in its own way.” Because when he surveys the literature on families wrecked by wealth and power, he mostly sees the same sad patterns in endless repetition.</p>
+<p>The contours of his own family’s story are familiar to the point of cliché—the legacy-obsessed patriarch slipping into senescence and paranoia, the courtiers whispering in his ear, the siblings squabbling over their portion of the kingdom. “It’s all been written down many, many times,” he said. “The real tragedy is that no one in my family doing this bothered to pay attention.”</p>
+<p>There had always been rumors about James—­his more liberal politics, his rifts with Rupert—­but over two decades as an executive at News Corp and Fox, he’d played the good soldier and loyal son. He’d even been groomed at various points to be his father’s successor. Then, in 2020, he abruptly resigned from News Corp’s board of directors in a short letter citing “disagreements over certain editorial content” and “other strategic decisions.” James had never fully explained what led to this decision, and when I approached him in early 2024, I hoped he might be ready to elaborate.</p>
+<p>I didn’t yet know that the Murdochs were in the midst of a private meltdown over the family trust. But the trial, I would learn, was really the culmination of a decades-long story—one that James decided he was finally ready to tell.
+Over the next year, he and his wife, Kathryn, told me about the mind games at a Murdoch family-­counseling retreat, and all the ways that Rupert had devised to pit his sons against each other. They detailed the cynical deliberations that had led the family’s news outlets to support Brexit and Trump, and the machinations that various family members had undertaken to get one another fired or subpoenaed or humiliated in the press.</p>
+<p>Some of these stories felt strangely familiar, having appeared in slightly altered forms on Succession, the HBO drama about a fictionalized family very much resembling the Murdochs. James had never watched the series; he’d tried the first episode, but found it too painful. But other members of the Murdoch clan were obsessed with the show; certain scenes and storylines seemed un­cannily true to life. Throughout my reporting, I heard constant speculation about which family members might secretly have leaked to the show’s writers. James and Kathryn, I was told, thought his sister Liz was responsible. Liz swore she wasn’t, though for a while she was convinced that her ex-husband was talking with the writers—­and in fact she later learned that he’d repeatedly offered his services, but the showrunner, Jesse Armstrong, had declined. Armstrong told me that he and his writers simply drew on press reports. “I think there’s a bit of psychodrama around this sort of thing,” he told me.</p>
+<p>Read: The play that explains Succession (and everything else)
+Airing the dirty laundry didn’t come naturally to James. In our conversations, he vacillated between seething anger toward his father and an odd kind of protectiveness. Trim and neatly dressed, he spoke in an even, British-inflected staccato that seemed to belie a subcutaneous anxiety. Sometimes, when I would ask him about a particularly painful episode with his father, he would find that the dishes suddenly needed clearing.
+Kathryn often took on the role of taskmaster. In one meeting, James began our interview by speaking rapidly for 11 straight minutes about the adaptive cruise control on his Tesla, and the new venture he was launching with Art Basel, and his daughter’s summer internship working with giraffe conservationists in Zimbabwe. Finally, Kathryn interjected. “Sweetheart,” she said firmly. “I think you need to take a breath, take a sip of water, and maybe we should just talk about what we want to talk about.”</p>
+<p>James had long ago internalized the edict that you never talk to reporters about the family. This was an inviolable rule of Rupert’s—one of the first things Kathryn had learned when she and James started dating. James hated the books and articles written by professional Murdoch chroniclers, which he mockingly referred to as “the canon.” It wasn’t until his father’s texts and emails came out in the trust litigation that James realized just how many insidious stories over the years—the ones that portrayed Kathryn as a meddling “former model” and James as a liberal dilettante—had been planted by Rupert’s camp. The revelation was liberating.</p>
+<p>The couple’s motives in talking to me were surely mixed. Sometimes, they seemed fueled by raw anger at what they see as Rupert’s betrayal. Other times, they seemed preoccupied with reputation management—eager to present themselves as evolved, socially conscious billionaires, and distance themselves from certain unfortunate associations with the Murdoch name. (Rupert and Lachlan declined to be interviewed for this story, but a spokesperson objected to what he called a “litany of falsehoods,” noting that they came “from someone who no longer works for the companies but still benefits from them financially.”)</p>
+<p>James also seemed compelled, in part, by a desire to add his chapter to the literature of family dysfunction, in hopes that some future family might take the lessons more seriously than his own had. During our first meeting, he told me about a document that one of his father’s lawyers had written, which included a quote from King Lear: “How sharper than a serpent’s tooth it is to have a thankless child.”</p>
+<p>James and Kathryn found it darkly amusing. Did Rupert and his lawyers not realize that the famous line uttered by the mad king is aimed at Cordelia, who turns out to be Lear’s only honest daughter?
+“The whole point is that the crazy old man doesn’t know that Cordelia is telling him the truth,” Kathryn told me. Her husband studied a spot on the table in front of him.</p>
+<p>Rupert’s media empire has its own mythology, one that every Murdoch learns at an early age. The story begins during World War I, when a young reporter named Keith Arthur Murdoch visits Australian soldiers fighting in Gallipoli. There, Keith learns that the campaign has been a secret disaster. His countrymen are dying by the thousands, serving as cannon fodder for the British military. Press reports are supposed to be submitted to military censors, but Keith—­exhibiting a rebellious streak and a nose for a great story—­smuggles out news of the slaughter in an 8,000-word letter. The dispatch circulates widely in Australia, sparking public outrage, changing the course of the Gallipoli campaign, and turning Keith into a national hero. When he dies, in 1952, he leaves a newspaper in the coastal city of Adelaide to his 21-year-old son, Rupert, hoping to plant a dynasty.</p>
+<p>Rupert graduates from Oxford and returns to Australia in a hurry to turn his inheritance into an empire. He conquers the country’s media landscape in a reckless scramble, buying one newspaper and leveraging it to finance the debt for the next. He gobbles up TV stations too. Murdoch outlets become known for an irresistible mix of sports, scandal, and populist outrage; some observers will later call him the inventor of the modern tabloid. By the time he’s 40, he is the most powerful media figure in Australia, eventually controlling two-thirds of the country’s newspaper market.</p>
+<p>Rupert discovers that one of the great pleasures of being a press baron­ is wielding political power. After he arrives on Fleet Street, in the late ’60s, he buys a pair of popular British papers and uses them to successfully campaign for Margaret Thatcher, who later clears a regulatory path for Rupert to expand his British TV holdings. When he turns his attention to the U.S., he uses his acquisition of the New York Post to befriend an up-and-coming GOP operative running Ronald Reagan’s New York campaign. He works with Roger Stone to shape the candidate’s image, helping Reagan carry the state.</p>
+<p>In the New York media world, Rupert’s conservative politics are held in suspicion, and his rapid pace of acquisitions—­which include New York magazine and The Village Voice—is alarming. He appears on the cover of Time in 1977, his head pasted onto the body of King Kong, above a screaming tabloid-style headline: EXTRA!!! AUSSIE PRESS LORD TERRIFIES GOTHAM . But Rupert doesn’t care about popularity; he takes a certain arch delight in his nefarious reputation.</p>
+<p>Once Reagan is in office, his administration waives a rule against owning TV stations and newspapers in the same market, allowing Rupert to launch his own TV network in America. Analysts call him foolish for trying to take on CBS, NBC, and ABC. But Rupert fills Fox’s prime-time lineup with provocations—­sitcoms about dysfunctional families (The Simpsons, Married … With Children); pulpy crime shows (Cops, America’s Most Wanted )—and the network is an unexpected hit. He defies expectations again when he decides to challenge CNN’s cable dominance by launching a right-wing news channel.</p>
+<p>Amid all the empire building that follows—­the movie studio, The Wall Street Journal, HarperCollins, the push into Asia—­Rupert insists on treating News Corp like a family business, drawing his children into his professional world at every opportunity. At breakfast, he spreads the day’s newspapers across the table, and gives his children a master class for budding media moguls. Family dinners feature visits from politicians and dignitaries. He takes his children on tours of printing presses, and gives them internships at his newspapers.</p>
+<p>This is his animating motivation, he insists, his conglomerate’s entire reason for being. He loves his children, and he wants to leave them an inheritance that means something, just as his father did for him. “I don’t know any son of any prominent media family who hasn’t wanted to follow in the footsteps of his forebears,” he says. “It’s just too great a life.”</p>
+<p>But there is one episode that often gets left out of the official mythology. In the early ’90s, News Corp is in trouble, the result of a debt crisis brought on by Rupert’s relentless expansion. It has lost the confidence of the markets, its share price is depressed, and it is nearing bankruptcy. Rupert sees an opportunity in the crisis.
+Before dying, it turns out, his father placed his newspaper holdings in a trust and divided control equally among his wife and four children. Although Rupert has run the company all these years, he’s never truly owned it. Now, he decides, it’s time for that to change.</p>
+<p>Taking advantage of the low stock price, he informs his mother and siblings that he is ready to buy them out: He makes clear that he is not interested in negotiating. When the family meets to discuss the matter, his biographer Michael Wolff will later report, Rupert’s mother “buries her head in her arms on the boardroom table.”
+In Rupert’s conception of the family empire, the empire always takes precedence over the family.</p>
+<p>The Upper East Side penthouse where James spent his childhood had a private elevator entrance and a butler named George and panoramic views of Central Park. But kids want their fathers, and James’s was busy. “Is Daddy going deaf?” he once asked his mother, Anna, when he was young. “No,” she replied, “he’s just not listening.” Those storied bonding moments at the breakfast table were less rituals than special occasions, as far as James recalls. His parents moved to Los Angeles when he was around 16 and left James behind in Manhattan to attend the elite Horace Mann School. He would go long stretches without seeing them. When Rupert did come to town, striding into the penthouse in his double-breasted suits, talking about important things with a gaggle of employees, it felt almost like spotting a celebrity.</p>
+<p>In the roles assigned to the Murdoch children when they were young, Prue was the peacemaking older sister from Rupert’s first marriage; Liz, the temperamental artist. The two boys were treated almost like twins—rivals in the unspoken competition for Rupert’s approval. Lachlan was the golden boy, the elder son and heir apparent, rugged and charismatic and self-consciously emulative of his father. James, the intense, cerebral kid who bleached his hair and pierced his ears and provoked his father at the dinner table with contrarian questions, was typecast as the rebel.
+James bristles at the caricature now, but he admits that he was “not an easy son.” He got into trouble at school, and demonstrated a lack of interest in his father’s work that could reasonably be construed as disdain. When, at 14, James interned at Rupert’s Australian newspapers, he fell asleep during a press conference, and a photo of the snoozing scion wound up in the rival Sydney Morning Herald.</p>
+<p>As a teenager, James spent summers at an archaeological site in Italy, digging holes alongside a bohemian collection of grad students, artists, and antiquities scholars. When they tried to provoke him with questions about politics, he responded simply, “I’m not my father.” He loved the work, and the freedom that came with it. Richard Hodges, who oversaw the excavation, thought James would make a worthy protégé, but he knew it wouldn’t happen. “His father wouldn’t have allowed him to do that,” Hodges told me.</p>
+<p>Still, the fact that Lachlan was the obvious successor gave James room to shape his own identity in those years. After graduating from high school in 1991, he enrolled at Harvard, where he got a tattoo, grew a beard, and began drawing a satiric comic strip for The Lampoon called “Albrecht the Atypical Hun,” about a kindly, poetry-loving World War I–era German who feels excluded because he doesn’t enjoy war crimes. James dropped out his senior year and moved to New York to start a hip-hop label with his friends. The offices for Rawkus Records featured a poster of Chairman Mao.</p>
+<p>He met Kathryn Hufschmid in 1997, when he was 24, aboard a charter flight to Fiji, where he, his brother, and an assortment of models, surfers, and Australian bodybuilders planned to spend a long weekend on a yacht. It wasn’t really James’s scene, but he was happy to find himself sitting next to a quiet, pretty blonde who shared his love of the Salman Rushdie novel Midnight’s Children. “We hardly saw them the whole weekend,” recalls Joe Cross, a friend who was on the trip. “They’d surface for meals.”</p>
+<p>Kathryn was living in Australia at the time, and James was in New York, so for their second date, they met halfway, in Hawaii. For their third, James invited Kathryn to meet his family on his father’s 158-foot superyacht, Morning Glory, off the coast of Australia. They were already talking seriously about their future, and the trip was a chance for Kathryn to see what she’d be getting into.</p>
+<p>The experience was enlightening. She caught Rupert cheating at Monopoly (he just smirked and shrugged), and observed constant sniping—at one point, Anna got up and left a family dinner in tears. Lachlan had brought along his latest girlfriend. When they got into an argument, Kathryn recalled, Lachlan shaved his head, jumped off the boat, and swam to shore. “He has a weird, dramatic side,” James told me. (A spokesperson for Lachlan denied James’s version of events.)</p>
+<p>Kathryn had grown up the only child of a single mother in Oregon, and left home at 15 to pursue modeling. She wasn’t scared off by this big, noisy, disputatious family—the prospect of having a family at all appealed to her. And she left a good impression: After the trip, Rupert urged James to propose as quickly as possible. They were married at a small ceremony in Connecticut, where James read Pablo Neruda and Kathryn read James Joyce.
+“She was very fond of Rupert, and she’s a very loyal person,” Chloe Hooper, a longtime friend of the couple’s, told me. “I don’t think she ever anticipated that 25 years later, she would be in this ideological knife fight with them.”</p>
+<p>On June 25, 1999 , guests boarded the Morning Glory, now anchored in New York Harbor, to watch Rupert Murdoch marry Wendi Deng.</p>
+<p>Rupert had finalized his divorce from Anna, his wife of nearly 32 years, just 17 days earlier, and both James and Lachlan objected to their father’s new marriage. The brothers believed that Deng, an executive at a News Corp subsidiary in Hong Kong, couldn’t be trusted, and suspected that she might even have ties to Chinese intelligence. (Deng has denied this, but James’s suspicion never died. More than two decades later, Kathryn would joke that Deng used “CCP-issued burner phones” to evade a subpoena in the trust litigation. A spokesperson for Lachlan denied that he objected to the marriage or had suspicions about Deng.)</p>
+<p>It was a time of broad upheaval for the family. Liz had split from her husband and taken up with Matthew Freud—an intense, unnervingly slick PR executive from London (and a great-grandson of Sigmund). The Murdochs, always skeptical of interlopers, were especially wary of Freud, with his constant flaunting of social connections and his gleeful loutishness. The first time Kathryn met him, she recalls, he started the conversation by trying to convince her that it was morally defensible for a man to cheat on his pregnant wife.</p>
+<p>At the wedding, Rupert gave a long, glowing speech about his new wife, while a barefoot Deng looked on adoringly. James and Kathryn parked themselves by a bucket of caviar and got drunk.</p>
+<p>James had joined the family business a few years earlier, after Rupert bought Rawkus Records and folded it into News Corp’s fledgling music and new-media group. James’s title, head of “digital publishing,” was not an especially exalted one at a dead-tree media company. Lachlan was the one on the succession track—­immersing himself in the tabloid business so beloved by his father and eventually apprenticing with the chief operating officer.</p>
+<p>Before long, the New York City head­quarters started to feel a bit cramped for both of the boss’s sons. At board meetings, James—ferociously analytical and eager to one-up his older brother—would freely challenge Lachlan, picking apart his logic and questioning his ideas. Lachlan, for all his easygoing confidence, was not as articulate as James—­he had struggled with dyslexia and spent time in speech therapy as a kid—­and sometimes grew flustered. The feuding was awkward for others in the room, but Rupert rarely stepped in to break them up.</p>
+<p>In 2000, Rupert decided to give James a new assignment that would take him to Hong Kong. James had recently worked with his mother to impose some semblance of peace on the family. During the divorce, Anna had asked her younger son to meet with her. She told him she was prepared to give up half of the money to which she was entitled in exchange for alterations to the family trust. Anna had seen the way Rupert played the kids off one another, how he picked favorites, how their lives risked becoming consumed with a never-ending quest for the crown. What she wanted was an arrangement that would split the family fortune—­and the empire—­evenly among the four children once Rupert was gone.
+With James acting as mediator, his parents reached an agreement. The trust would now give Rupert four votes and each of his four children one. When he died, his votes would disappear and control of the company would be split among Prue, Liz, Lachlan, and James.</p>
+<p>“The idea,” James would later recall ruefully, “was that it would incentivize us to cooperate.”
+In Hong Kong , James found that he thrived working 8,000 miles away from his father. He began repeating, almost like a mantra, a Chinese proverb: “The mountains are high and the emperor is far away.”</p>
+<p>He had been sent to turn around Star, an Asian satellite-TV company that had lost $200 million since News Corp bought it, in 1993, and was mired in mismanagement. The job had been presented as a big opportunity, but it looked to some like a suicide mission for a green 27-year-old.</p>
+<p>James’s first move was to pivot Star’s growth strategy from Hong Kong to India. He ordered an overhaul of Star’s Indian programming, commissioning mass-market shows in regional languages. After Star debuted an Indian version of Who Wants to Be a Millionaire, James built on the prime-time success by ordering a series of splashy Hindi-language dramas. Two years after he arrived at Star, the company turned a profit.</p>
+<p>James’s success in Asia came as something of a surprise back at News Corp headquarters, people familiar with the company told me. “I have to be honest,” James recalled one board member telling him, “I didn’t think you had it in you.”</p>
+<p>A promotion came in 2003, when James was named CEO of British Sky Broadcasting, a large satellite-TV company in which News Corp owned a 39 percent stake. His arrival in London was noisy and unwelcome. Rupert, whose down-market tabloids had earned him the nickname the Dirty Digger, was a villainous figure in Britain, and the appointment of his son to run a major British broadcaster prompted howls of nepotism and a sharp backlash in the market. On the day James made his first major presentation to investors, Sky’s share price dropped nearly 20 percent.</p>
+<p>Sky was profitable, but stagnant. Among Brits, it was widely seen as a price-gouging service that bought Premier League soccer rights and ransomed them to resentful subscribers. Its internal culture was macho and belligerent. The predominant mentality, James recalled, was “Everybody hates us and we don’t care.”</p>
+<p>Early on, James laid out his vision for a new, respectable Sky. The company was going to have a set of “values,” he told executives, and would adopt the best practices of a modern workplace. “All these grumpy, old English guys were looking around like, ‘What the fuck is this guy talking about?’ ” James told me.</p>
+<p>He pushed out Sky’s CFO and several other executives. After hearing that an employee had gotten drunk at a Royal Television Society banquet and thrown a dinner roll at the former director-general of the BBC, James ordered a manager to sack him. James told me that when the manager resisted, he had to explain why “being a dick in public when you’re an ambassador for the company” was a fireable offense.</p>
+<p>Under James’s leadership, Sky’s brand image improved and subscriber numbers grew. “He took what was this Aussie-inflected cowboy operation, and turned it into a respected, high-growth company,” Matthew Anderson, an executive who worked with James at Sky, told me.</p>
+<p>But James could feel Rupert’s ambivalence. He had succeeded in large part by rejecting the corporate ethos cultivated by his father. Rupert had a well-known management modus operandi: Hire aggressive executives, give them their own fiefdoms, and let them run wild. It was central to the Murdoch mythology—the empire built on instinct, run by a shrewd band of self-styled pirates and gamblers.</p>
+<p>From the September 2003 issue: James Fallows on the age of Murdoch
+In London and New York, James told me, the pattern was the same: Nobody seemed to listen to the in-house lawyers if they could help it, and human resources was an afterthought at best. “When I’d say things like ‘compliance,’ they’d be like, ‘Oh my God, he uses business-school speak!’ ” James recalled. “And it’s like, ‘No, it’s the English language, and it’s kind of an important idea.’ ”</p>
+<p>Rupert, for his part, seemed to resent his son for what he saw as a preoccupation with respectability, according to former News Corp employees. His misgivings were exacerbated by his apparent belief that Kathryn had indoctrinated James in fashionable left-of-center politics. The caricature periodically popped up in press coverage of the family: the witchy, liberal daughter-in-law casting a spell on Rupert’s impressionable son.</p>
+<p>It was true that Kathryn was becoming more political. An awakening came, of all places, at a News Corp retreat in Pebble Beach, California, where she listened to Al Gore deliver his famous presentation on climate change. Soon after that, Kathryn went to work for the Clinton Climate Initiative. She also became more outspoken while sparring with her in-laws.</p>
+<p>Once, during an argument over gay marriage, Rupert asserted that allowing same-sex couples to wed would be an affront to the institution.</p>
+<p>Some people would say the same thing about divorce, Kathryn told her father-in-law. Rupert was then on his third wife.</p>
+<p>Still, Rupert couldn’t afford to push away his younger son. Lachlan had left the company in 2005 after a series of confrontations with his father’s lieutenants in New York. The final indignity came when Lachlan, who was in charge of Fox’s TV stations, delayed green-lighting a police series developed by Roger Ailes, the CEO of Fox News. Ailes went over Lachlan’s head to Rupert, who reportedly told him, “Do the show. Don’t listen to Lachlan.” After years of being undermined by his father, who seemed conspicuously uneager to retire, Lachlan had had enough. He resigned and moved his family back to Australia.</p>
+<p>With Lachlan effectively taking himself out of the running, James was the new successor in training. In 2007, he resigned his post at Sky to take a major promotion running all of News Corp’s operations in Asia and Europe. James’s domain would be larger than ever.</p>
+<p>The James Murdoch who moved into News Corp’s corner office in London was all but unrecognizable to many who had known him earlier in life. He’d always been ­a “bundle of pent-up energy,” as one former employee put it to me, but now he was brash and cocksure. He charged into a rival newspaper’s office to castigate the editor for running an ad campaign critical of his family. He insinuated himself with major shareholders and dined privately with David Cameron. To some observers, he looked like a boy trying on his father’s sport coat, but James clearly felt like he was on a hot streak.</p>
+<p>He assembled a team of loyal deputies—­young men in dark suits and open collars who were similarly fluent in M.B.A. jargon—­and launched an ambitious bid to acquire the part of Sky that News Corp didn’t already own. If completed, this would be the largest acquisition in the company’s history. By all appearances, James was establishing a rival power center on his side of the Atlantic—and he could sense that his growing confidence agitated his father.
+In the 2008 biography for which he interviewed Rupert and his children at length, Michael Wolff noted an odd dynamic forming between James and Rupert around this time. James seemed to be deliberately cultivating a public persona modeled after his father’s—but rather than bringing the two men closer, the performance appeared to threaten Rupert. “His father is obviously proud,” Wolff wrote, “even perhaps slightly afraid of him.”</p>
+<p>Then one day in 2010, Rupert did something out of character: He invited his adult children to a family-counseling retreat in Australia. He explained that he’d hired a therapist who specialized in families like theirs, and said he believed the guy could help them.</p>
+<p>The retreat was held at the Murdoch family’s ancestral ranch in Cavan Station, a 25,000-acre farm a few hundred miles from Sydney where Merino sheep roam the plains and kangaroos have to be culled. The purpose was not ostensibly to discuss succession planning, James recalled, but rather how they would “behave with each other.” (“Was this more business or personal?” I asked. “There’s no difference in this family,” he said.)
+Lately, Rupert had been talking with Liz about acquiring her production company, Shine Group. James didn’t think his sister should sell—she’d turned Shine, which produced megahits such as The Biggest Loser and MasterChef, into a success all by herself. Why let their father get his claws in it?</p>
+<p>“My father was always trying to pull everyone into the company so that he could manipulate them against each other,” James told me.</p>
+<p>The therapist began by sitting down with each Murdoch individually to get their view of what was wrong with the family. James, skeptical of the exercise, remembers telling him, “There’s some stuff you don’t need to pick at—nothing good is going to come of it.”</p>
+<p>Sure enough, when the therapist convened the family, the session devolved into posturing, gaslighting, and recriminations. Everybody was spinning stories to garner strategic sympathy and advance their own agenda, James and Kathryn told me. “I think that the shrink was outmatched,” Kathryn said.</p>
+<p>“It was a car crash,” James said. “Everyone was more alienated from each other at the end.”</p>
+<p>Not long after that weekend, a mention of the Murdochs’ family therapy made it into Vanity Fair. Whoever leaked the story described a loving, supportive experience: James’s siblings advocating for their little brother, eager to help him strengthen his relationship with their father so that he’d be ready to take over the business one day. When I read this account to James, he scoffed.</p>
+<p>The family-trust litigation had recently led him to some very different conclusions about the purpose of that strange retreat. His siblings, he’d come to believe, had grown irritated by his successful run at News Corp. Perhaps watching their little brother strut around like a boy-king—unsupervised by the king himself—had bred resentment. In any case, he believed, they’d been agitating for Rupert to rein in James. The family counseling was, James now believed, primarily an effort to get control of him.</p>
+<p>At the end of the retreat, Liz told me, she offered to draft what she called a “family constitution”—an attempt to codify the values by which the newly therapized Murdochs would comport themselves. The document, titled “Murdoch Principles,” was passed back and forth between Liz and James, and eventually signed by all four siblings in February 2011. It contained a series of bullet-pointed aspirations:</p>
+<p>“We commit to undertake active dialog with each other at all times and to relentlessly communicate openly, with trust and humility.”</p>
+<p>“We agree not to delegate to anyone matters of family communication.”
+“We will be vigilant of and defend against divisiveness, either between us or that which could infiltrate from without.”</p>
+<p>Within months, the Murdochs would be at each other’s throats.</p>
+<p>In 2002 , a British teenager named Milly Dowler went missing. Her disappearance became a national fixation; after a six-month search, she was found dead. Nearly a decade later, on July 4, 2011, The Guardian published an explosive story, reporting that journalists at the Murdoch-owned News of the World tabloid had directed a private investigator to hack into Dowler’s voicemail before publishing the contents of some of the victim’s messages.
+The Guardian article was followed by a cascade of stories alleging that News of the World had also hacked the families of soldiers killed in Afghanistan and Iraq, relatives of victims of the 2005 London bombing, and the mother of an 8-year-old girl who was murdered by a pedophile. As the allegations piled up, James huddled with executives and lawyers to figure out how serious the issue was. He had never paid close attention to the company’s newspapers in London; they were his father’s preoccupation.</p>
+<p>The alleged hacking had taken place before the news­papers were his responsibility. But James had made a decision three years earlier that now tied him directly to the scandal. In 2008, just six months after starting his new job, he’d signed off on a settlement with Gordon Taylor, a soccer executive who’d sued the company for hacking his cellphone. It didn’t seem like a big deal to James at the time—a reporter had gone rogue, a deal had been reached, and employees who knew more about the matter than he did had advised him to authorize the payment. When executives later presented him with evidence of widespread phone-­hacking at News of the World, his approval of the Taylor settlement started to look like a cover-up. Over Rupert’s objections, James said, he instructed the company’s lawyers to call the police and hand over everything they had. (A spokesperson for Rupert disputed James’s account.)
+Shortly after the Guardian story broke, James called his father to say they needed to shut down News of the World—the company’s most widely read newspaper—to contain the crisis. Rupert was not happy. He saw the scandal as an attack by his competitors—and the way to deal with an attack was to fight back. He instructed his son not to say a word to the press, James recalled. He’d be in London soon.</p>
+<p>In the meantime, James became the public face of the scandal. Paparazzi camped outside his house. Pundits speculated that James might face a prison sentence. Every time Kathryn heard a siren in the distance, she was briefly gripped with a panic that the police were coming to arrest her husband.
+“This is crazy!” she recalled telling James. “You cannot just sit here and hide!” He had to take control of the story.</p>
+<p>“My father won’t let me,” he said.</p>
+<p>Rupert’s arrival in London only made things worse. While James worked with his team on a damage-control strategy—­including firings, internal compliance reforms, and an ad campaign apologizing to the public—­Rupert was freelancing. He went around London answering reporters’ shouted questions, and paid a surprise visit to Milly Dowler’s parents. He told a Wall Street Journal reporter that he was “getting annoyed” with all the negative publicity, generating yet another round of negative publicity.</p>
+<p>James was alarmed. His father looked frail and confused—nothing like the decisive, towering figure he’d long admired and tangled with. He remembers calling Lachlan in Australia and fretting, “Dude, our old man has gone crazy. This is terrible.”</p>
+<p>To quell the public’s outrage, someone high up at the company would have to resign. To James, the obvious choice was Rebekah Brooks, the former News of the World editor who now oversaw the Murdochs’ British newspapers. But Rupert loved Brooks, and insisted that he prized loyalty. “I don’t throw people under a bus,” he reportedly said.
+James’s sister had a different idea. Liz, who lived in London and had sold Shine to News Corp earlier that year, had been a constant presence throughout the crisis, offering advice and comfort to their father. At one point, while talking with Rupert in the office he’d commandeered as a war room, she made the case that a member of the family would have to take the fall—­and that person should be James. He’d already been planning to leave Europe to work under News Corp’s chief operating officer in New York. Why not reframe his resignation as a kind of Murdoch mea culpa?</p>
+<p>Rupert said he’d think about it. The next day, he told Liz he liked the idea.
+Then he added, “Go tell him.”</p>
+<p>Liz obediently made her way down the hall to James’s office. “I was chatting with Dad, and we think the only way to stop the noise is for you to step down,” she recalled telling him. James was irate. He knew his father hated familial confrontation, but this represented a new level of cowardice. He told Liz that if their father wanted to fire him, he’d have to do it himself.</p>
+<p>The episode did lasting damage to James and Liz’s relationship. When anonymously sourced stories appeared in the press painting James as the chief villain in the phone-hacking saga, he suspected that Liz’s camp was behind them. And when Liz’s production company was dismantled and merged with two other companies in 2014, she believed it was her brother exacting revenge. The siblings barely spoke for years. More than a decade later, Liz would tell me that she couldn’t believe she’d sacrificed her relation­ship with James in her quest for her father’s approval. “It’s one of the greatest regrets of my life,” she said.</p>
+<p>James eventually came to understand that Rupert and Liz weren’t the only ones trying to scapegoat him. He told me that Liz’s then-husband, Freud, had used his extensive media contacts to wage a concerted leak campaign against him with the apparent goal of making Liz the new favored successor so that he could play puppet master. (The couple divorced in 2014. Kathryn, reflecting on his behavior throughout the marriage, told me, “I cannot exaggerate what a terrible person he is.” Freud did not respond to requests for comment.)</p>
+<p>How much responsibility did James bear for the bungling of the phone-hacking scandal? Two News of the World employees would claim under oath that they’d told him about evidence that the practice went beyond one rogue reporter and a private investigator, and that he’d ignored them. James notes that a parliamentary committee later found that the pair had made misleading statements about other aspects of the phone-hacking scandal, and maintains that his employees hid evidence from him. A parliamentary investigation found that James was, if nothing else, guilty of “an astonishing lack of curiosity.”</p>
+<p>What’s clear is that James took the brunt of the blame. On July 19, 2011, he appeared alongside his father at a high-profile parliamentary inquiry. James tried to read from the statement he’d prepared with the company’s lawyers, but Rupert cut him off to intone, “This is the most humble day of my life.” Later, when Rupert was asked why he hadn’t fired a reporter accused of phone-hacking, he said, “I had never heard of him,” and then added, “I think my son can perhaps answer that in more detail.”</p>
+<p>James left London in disgrace in 2012 and moved back to New York, having resigned from his job as executive chairman of the Murdochs’ British publishing unit as well as his chairmanship at Sky. His role as deputy chief operating officer of News Corp had been presented publicly as a promotion, but in reality he was on a short leash—toiling in the company’s headquarters under the watchful eye of his father.</p>
+<p>Fourteen years later , the phone-hacking episode remains an obsession for James. It was the moment everything began to unravel, and his appetite for re­litigation seems bottomless: the hit pieces that had gotten key facts wrong, the politicians and competitors who’d maligned him for sport. But whenever I’d ask about his father’s role in it all, he’d clam up. I began to wonder if he was actually protecting Rupert.</p>
+<p>One afternoon in the spring of 2024, James, Kathryn, and I sat at the dining-room table in the couple’s grand country home in Connecticut, and I tried to get him to tell me the story again, this time without skipping the parts about his father. He kept standing up to clear the table, or asking if anyone wanted coffee, or suggesting that we move into the living room. At one point, he trailed off mid-sentence and nodded vacantly toward a window. “We had a bear in those little trees last year,” he said, to no one in particular.</p>
+<p>Finally, Kathryn volunteered her version of events. For as long as she’d been in the family, she argued, Rupert had tried to force his two sons into a rigged competition. “He was pitting them against each other,” she said, “but there was always going to be one winner.” Every promotion James had gotten was, in Kathryn’s view, an invitation to fail, so that Rupert could validate his first choice of successor. When the phone-hacking scandal hit, Kathryn told me, “they could finally force a failure” on James.</p>
+<p>This sounded a bit conspiratorial to me, and I wondered if James would quibble with it. Instead, he just shrugged. “I mean, you take your lumps, right?” he said. “It’s life.”</p>
+<p>I wanted to press him on this point—to suggest that it might not actually be normal for your father to conspire to destroy your career and place you in legal jeopardy in order to give your job to your older brother. But James surely knew all this. Maybe he just didn’t want to dwell on his father’s cruelty, or the fact that he’d never been the favorite. James wasn’t protecting Rupert, I realized. He was protecting himself.</p>
+<p>On April 22, 2015 , James pulled up to the Lambs Club, a Midtown restaurant popular among media executives. He was scheduled to depart that afternoon for Indonesia, but he’d been asked to make time for a quick lunch with Lachlan and Chase Carey, one of Rupert’s most trusted lieutenants. He wasn’t expecting an ambush.</p>
+<p>Four years after the phone-hacking scandal, the fallout was still being felt. Hundreds of victims had come forward, and millions in settlements had been paid. At least 15 employees had been charged with hacking crimes. The company had been forced to drop its bid for Sky, and Rupert, in order to protect his most valuable brands, had split his empire in two, with the news­papers and HarperCollins under the News Corp umbrella and the U.S. TV and film assets housed in a separate company, 21st Century Fox. (Rupert remained chairman of both companies.)</p>
+<p>James believed, however, that he was still the only plausible successor. Lachlan was happily cocooned in Australia. He and his wife, Sarah, a former host of Australia’s Next Top Model, were a Sydney power couple. Rupert had made it clear in recent years that when the time came, James would become CEO of Fox while Lachlan maintained a symbolic chairmanship role from Australia. After years of succession drama, it seemed the Murdochs had finally come to an understanding.</p>
+<p>But James sensed that something strange was going on as soon as he sat down at the Lambs Club. Finally, Lachlan and Carey came out with it: Lachlan would be returning to the U.S. to become CEO of Fox, and James was going to report to him.
+Today’s essential stories. In audio. Listen in The Atlantic app.</p>
+<p>James, stunned, tried to keep his voice steady. “No, I’m not going to do that,” he remembers telling them. They could run the company without him.</p>
+<p>He walked out and headed straight to the airport. For the duration of his trip, he ignored texts and phone calls from his father and brother. James felt that he’d earned the top job after nearly two decades of work—­a belief he’d thought his father shared. To discover now that Rupert had been talking with Lachlan about coming back and claiming his rightful spot as heir apparent was too much to take. There was simply no way he was going to work under his brother.</p>
+<p>As rumors of James’s resignation spread through the companies, anxiety started to set in, former employees of Fox and News Corp told me. James, for all his shortcomings, was the only Murdoch son who knew anything about the business. One former executive told me that losing James would have been “a disaster.”</p>
+<p>By the time James got back to the U.S., Rupert had retreated: James would become CEO as planned, and Lachlan would be named chairman. It would all be announced that summer.</p>
+<p>James agreed to stay. But as the announcement neared, he told me, he began to suspect that he’d been played. First, Lachlan announced that he and his family were moving from Sydney to Los Angeles. Then he began setting up an office on the Fox studio lot. By the time the reorganization was announced in June, the bait and switch was complete: Lachlan was not taking a passive figurehead role; he was going to be executive co-chairman, a title he would share with Rupert. James and Lachlan would be running the company together.</p>
+<p>Why didn’t James quit? He told me that he was guided by a lesson from the Divine Comedy. At the gateway to hell, Dante encounters a character believed to be Pope Celestine V, who in life had abdicated the papacy to live as a hermit. His choice had been celebrated for its holiness and purity, but Dante deems him a coward for allowing evil to enter the Church in his absence.</p>
+<p>To James, the meaning was clear: If you have a chance to wield power for good and choose to walk away, you’re responsible for what comes next.</p>
+<p>In June 2016 , days before Britain was scheduled to vote on Brexit, James attended a News Corp board meeting in London. The once-fringe idea of the country leaving the European Union had, in recent months, gotten a major boost from the Murdoch press. The Sun ran stories warning of the “GREAT MIGRANT SWINDLE ” being perpetrated by EU bureaucrats in Brussels. The Sunday Times endorsed the referendum and gave favorable coverage to Boris Johnson, the floppy-haired member of Parliament, as he campaigned for the Leave cause in a bright-red “battle bus.” Opponents argued that the referendum’s passage would have dire economic consequences—but that side of the story was no fun. The Brexit movement made great copy.</p>
+<p>At a lunch before the meeting, James was chatting with top editors, executives, and directors at News Corp when Johnson himself dropped in. He cracked jokes and regaled the group with stories from the campaign trail. When someone asked him if the referendum would pass, Johnson smirked: We’ll see!
+“It struck me that everyone was just having a laugh,” James recalled. “Nobody thought it was going to win, including Johnson.”
+James noticed a similar attitude in the early coverage of Donald Trump’s 2016 campaign by the Murdochs’ outlets. Like most everyone else in his orbit, James had initially regarded Trump as a sideshow. But as the candidate took off, the attitude among people inside Fox and News Corp was illuminating.</p>
+<p>James had assumed, perhaps naively, that his older brother—­Princeton-educated world traveler that he was—­would balk when Trump, say, proposed banning Muslims from entering the country. But whenever James mentioned one of these outrages, Lachlan would bristle. “He immediately went to this nasty, knee-jerk, anti-Hillary stance,” James recalled. “I was sort of taken aback.” As time went on, James said, he was surprised by the degree to which his brother was apparently willing to indulge “reactionary” and “white nativist” ideas. (A spokesperson for Lachlan called this characterization false.) James never would have suspected affable, dilettantish Lachlan of being a secret ideologue.</p>
+<p>Even more surprising to James was that his father seemed to have no ideology at all. He’d thought his father was a devoted free-marketeer, an internationalist who supported American global power, and a believer in immigration as a source of industry and ingenuity. His brand of conservatism seemed miles apart from Trump’s—and indeed, for the first few months of the campaign, Rupert was openly scornful of the candidate. He told James that if Trump won, it would “be the end of the Republican Party,” and when Fox News hosted the first debate of the GOP primaries, he reportedly ordered Megyn Kelly, one of the moderators, to hit Trump hard. But once it became clear that Trump’s appeal to Rupert’s audience was enduring, Rupert pivoted.</p>
+<p>The Wall Street Journal ’s editorial page, a bastion of Reagan-Thatcherite conservatism, started running editorials defending Trump’s policies. The Fox News prime-time lineup became a four-hour Trump commercial. Rupert’s beloved New York Post ran covers celebrating Trump’s shredding of liberal pieties. There was no intellectually consistent way to reconcile the about-face. It was, James realized, just power and profit and mischief all the way down.
+“There’s this tabloid culture that’s contrarian for the sake of it, and delights in poking people in the eye,” James said. “At its worst, it metastasizes into something nasty and scary and manipulative.” Press these cynical Trump boosters for a defense, he told me, and they would say something like “He’s not going to be president anyway—­what’s the harm?” He compared the outlets to Paul von Hindenburg, the German president who in 1933 inadvertently enabled Hitler’s rise to power, earning himself the nickname “Undertaker of the Republic.”
+“I underestimated the ability of a profit motive to make people do terrible things—to make companies do terrible things,” James later told me.</p>
+<p>Then, in July, James thought he saw an opportunity to intervene. He and Lachlan were in Sun Valley, Idaho, for the annual Allen &amp; Company media conference when news broke that Ailes was being sued by the Fox anchor Gretchen Carlson for sexual harassment. Rather than simply issue a statement of support for Ailes and wait for the litigation to resolve, James and Lachlan decided that the company should contract an outside law firm to conduct its own internal investigation.</p>
+<p>This was not an obvious call: Ailes had built Fox News into the single most profitable asset in the Murdoch empire, and Rupert had rewarded him with wide latitude and loyalty. But Rupert was unreachable at the moment—flying back from France, where he’d been vacationing with his fourth wife, Jerry Hall—which meant that James and Lachlan had a brief window to act. Together, they decided to approve the investigation before their father’s plane landed.
+Over the next two weeks, dozens of allegations would surface against Ailes. Ailes had reportedly demanded oral sex from women at work, and promised career advancement in exchange for sexual favors. (A lawyer for Ailes called the allegations false.) James wanted to fire him immediately, but Rupert insisted that it was better to let him resign.
+Read: Roger Ailes’s (other) legacy</p>
+<p>To replace Ailes, James wanted to hire David Rhodes, the president of CBS News, who’d gotten his start at Fox News. He thought Rhodes could clean up the network’s culture and instill more rigorous editorial standards. Lachlan was fiercely opposed. After letting the brothers squabble for a while, Rupert announced that he would run Fox News himself as interim CEO.</p>
+<p>To James, the result was predictably catastrophic. Under Rupert’s nominal supervision, the Fox News talent was free to run wild. Tucker Carlson, whom Murdoch had promoted to prime time, began airing monologues about the racist “Great Replacement” conspiracy theory (aided by a head writer for the show who was later revealed to be posting racist content under an online pseudonym). Other hosts publicly sounded off about the injustice of the accusations against Ailes.</p>
+<p>In January 2017, the anchor Bill O’Reilly settled a $32 million lawsuit with a former on-air analyst who’d accused him of sexual harassment. When news of the payout became public later that year, Rupert and his sons said they hadn’t been privy to the dollar figure, but they did know a settlement had been reached, and had decided to renew O’Reilly’s contract anyway.</p>
+<p>In June 2017, British regulators punted on approving the Murdochs’ second bid for Sky, James’s longtime dream acquisition. The regulators cited antitrust concerns, but James thought he knew the real reason: He was now presiding over a company that was known around the world as a scandal-ridden propaganda machine for Donald Trump.
+James and Lachlan tried to project unity as they ran Fox together. But in reality, James told me, the power-sharing was a disaster. Inside the company, Lachlan hated any suggestion that his younger brother was the more seasoned executive. And James grew exasperated by Lachlan’s certainty about the ins and outs of a company he’d left a decade ago. “You don’t develop the capabilities necessary for running large, complicated companies by osmosis,” James said.
+Both brothers, who were based on opposite coasts, had to sign off on every major decision, James said—and Lachlan was often conspicuously unavailable when needed. He skipped meetings, and would go days without responding to certain texts and emails from James. People who observed the brothers’ dynamic were mystified. “It was like parallel play,” a former employee told me, “but one of them wasn’t playing.”</p>
+<p>Then, in August 2017, torch-bearing white supremacists marched through Charlottes­ville, Virginia, chanting, “Jews will not replace us!” In the days that followed, the cable-news channel that James ostensibly ran spent hours defending Trump, who had asserted that there were “very fine people” marching with the neo-Nazis.</p>
+<p>James wanted to say something to his employees about Charlottes­ville. But he also knew how it would look to his father and brother: pious, nagging James once again shoving his personal politics in everyone’s face. He dreaded the prospect of arm-­wrestling with Lachlan over every word in the statement, as the brothers had earlier that year when they issued a company-wide memo responding to Trump’s travel ban. (James had wanted to reassure their Muslim employees and oppose the policy; Lachlan insisted on watering it down.) Maybe, James thought, it wasn’t even worth trying this time.</p>
+<p>Finally, Kathryn asked a clarifying question: “If you’re not going to stand up against Nazis, who are you going to stand up against?”</p>
+<p>James decided to put out his own statement without consulting Rupert or Lachlan. In an email sent to friends, and promptly leaked to the press, he denounced the protesters in Charlottesville as well as Trump’s reaction to them. “I can’t even believe I have to write this: standing up to Nazis is essential; there are no good Nazis,” he wrote. He and Kathryn would be donating $1 million to the Anti-Defamation League, and he encouraged others to join them.
+The couple thought Rupert might speak out, too. He had long considered himself a proud opponent of anti-­Semitism, and had even once been honored by the ADL. But Rupert remained silent, as did Lachlan.</p>
+<p>By the fall, James wanted out. The situation with his brother was becoming untenable. Lachlan had no interest in James’s reforms, and James could no longer look away from the effect that Fox News was having on both U.S. politics and the reputation of the broader Murdoch enterprise.</p>
+<p>Around this time, Rupert began talking with Disney’s chairman, Bob Iger, about a potential sale of the 21st Century Fox film and TV studio. After decades of empire building, Rupert was coming to terms with the fact that Fox wasn’t big enough to compete in the streaming wars with Netflix, Apple, and Amazon. Better to whittle down the company to his first love—news—and cash out on everything else.</p>
+<p>James knew a sale would give him cover to leave the company without causing too much speculation about the family’s growing rifts. It would also mean a payday for major shareholders, himself and his siblings included. He threw himself into the negotiations.</p>
+<p>As the Disney deal took shape, however, Lachlan became more and more hostile to it. He grumbled that he’d moved his family from Australia to Los Angeles so he could preside over a proper media empire. Now they wanted to off-load its most glamorous asset and leave him with a collection of shrinking TV stations, cable channels, newspapers, and book imprints that, according to one former News Corp employee, he referred to as “ShitCo.”</p>
+<p>Over dinner one night at Gramercy Tavern with James and Rupert, Lachlan—usually so friendly and unflappable—lost his temper. He shouted threats and ranted about his opposition to the deal, James recalled. Before storming out of the restaurant, Lachlan delivered an ultimatum: If you go through with this deal, he told Rupert, “you will not have a son.” Then he turned to James and added, “And you won’t have a brother.”</p>
+<p>Years later, when James looked back on Lachlan’s prophecy, he would call it an “Oracle of Delphi moment.” In the end, a brother and son would be lost—just not the one they thought. (A spokesperson for Lachlan called James’s version of events false, and denied that Lachlan used the term ShitCo.)</p>
+<p>The deal closed on March 20, 2019: Disney would purchase 21st Century Fox for $71.3 billion. As an apparent concession to Lachlan, the studio lot—where he kept his office and rock-­climbing wall—would remain in the Murdochs’ possession. Within a few years, the price that James helped negotiate would be widely seen on Wall Street as a coup, with some analysts estimating that Disney had overpaid by as much as $20 billion. James and his siblings each received roughly $2 billion.
+The day the deal closed, James and Kathryn contributed $100 million to their foundation. Its offices were in Lower Manhattan, two floors above James’s new investment firm, Lupa Systems. The firm was named after the she-wolf in Roman mythology who nurses the twin boys Remus and Romulus—­one of whom goes on to kill the other to become the first king of Rome.</p>
+<p>In January 2020 , a reporter for the Daily Beast reached out to James. Australia was experiencing a devastating series of bushfires that were widely seen as a consequence of climate change—but in the Murdochs’ Australian news outlets, that notion was treated as absurd. The Daily Beast reporter wanted to know what James thought of the coverage. It was the kind of question he’d always ignored—but this time felt different.</p>
+<p>Since stepping down as CEO of 21st Century Fox, James had retained his seat on the News Corp board. But now that he was no longer heir apparent, he found, his father’s courtiers and loyalists did not appear to be gripped by his views. One day, while sitting in a board meeting, he’d begun making a list of all of the investments, reforms, and initiatives he’d pushed for, only to be shot down or ignored. Looking at the list, and around the table, he thought, What am I doing here?</p>
+<p>James had his spokesperson give the Daily Beast a statement: “Kathryn and James’ views on climate are well established and their frustration with some of the News Corp and Fox coverage of the topic is also well known. They are particularly disappointed with the ongoing denial among the news outlets in Australia given obvious evidence to the contrary.”</p>
+<p>The quote angered the News Corp board. In May, James was told that if he didn’t resign his board seat, he risked being voted off—an outcome he’d expected. He resigned.</p>
+<p>A wave of media speculation followed. Dynastic drama was in the ether; Succession was gearing up for its third season. The show’s popularity had created a life-imitating-art-imitating-life phenomenon: All the fictionalized on-screen scheming led to conjecture in the press about real-life scheming among the Murdochs, which seemed in turn to induce higher levels of paranoia within the family.</p>
+<p>Observers had long understood that Liz and Prue were liberals who disagreed with the rightward tilt of Rupert’s outlets, while Lachlan was a man made in his father’s image. James was always the unknown variable. Now that he was adopting a publicly antagonistic posture, pundits were predicting that he and his sisters would team up once Rupert died, boot their brother from the corner office, and finally domesticate News Corp. Words like coup were getting tossed around in the press, and Rupert suspected that James himself was working to promote the narrative. (According to James, Rupert didn’t think Liz or Prue could possibly have been the ringleaders. “He doesn’t believe his adult daughters are capable of making decisions,” James told me.)</p>
+<p>James would later tell me the idea was ridiculous. No secret conspiracy existed among him and his sisters, he insisted. Besides, if they were plotting a coup, why would James want it broadcast in the press?
+But disabusing his father of this conspiracy theory wasn’t easy, because the two men were no longer speaking. Their estrangement hadn’t been a conscious choice. James had simply found that there wasn’t much to say to each other anymore—­work had always been the foundation of their relationship. Now Rupert’s perception of his younger son was shaped more by what he read. James was becoming a problem.</p>
+<p>James was still finding it difficult to stay away from the family business. In 2022, Rupert announced plans to re­combine Fox and News Corp, and asked his four oldest children to sign a letter recommending the merger. They were to promise, among other things, not to sell any of the companies’ assets, regardless of how much was being offered.</p>
+<p>Surely it wasn’t in shareholders’ best interest, James thought, to uniformly rule out any future offer. His sisters, and the directors who managed their trust, shared his concern. But when one of the directors, Richard Oldfield, raised it on an email thread, Rupert erupted.</p>
+<p>“Sorry Richard! This has been a family dominated business for seventy years,” he wrote. “It would be a disaster for at least the US and Australia if these assets fell into the wrong hands.” Rupert believed that a transaction that gave liberals control of any piece of his empire would amount to an intolerable blow to his legacy.</p>
+<p>But James was worried that the recombined company would be less valuable than it was divided in two. Before signing the letter, he requested additional information about the directors’ fiduciary responsibilities in the matter. Rupert responded by griping that James and his sisters were throwing up legal obstacles and told Liz that he might just “ram it through.”</p>
+<p>The boards for Fox and News Corp had set up committees to study the merger, and James decided to write them each a letter detailing his concerns. James heard that the letters infuriated his father and brother. But he was vindicated, in January 2023, when Rupert was forced to abandon the merger amid a revolt by shareholders. More vindication came a few months later, when Fox announced a $787.5 million settlement with Dominion Voting Systems. In the weeks after the 2020 election, Fox News had repeatedly aired false claims that Dominion’s voting machines had rigged the election against Donald Trump. Now, as a result of the reckless conspiracizing, the network’s parent company was paying one of the largest-known defamation settlements in history.</p>
+<p>David A. Graham: Fox News lost the lawsuit but won the war
+The final phase of the Murdoch-family crack-up, as best James could tell, began with a woman named Siobhan McKenna.
+A longtime friend and confidant of Lachlan’s, McKenna served as his managing director in the family trust. Her fierce loyalty had helped make her one of the most power­ful media executives in Australia—CEO of News Corp’s Australian broadcasting arm, chair of the Australia Post, and managing partner at Lachlan’s private investment firm.
+In the summer of 2023, McKenna approached Lachlan with a proposition: She believed she could devise a plan that secured Lachlan’s future control of the companies and permanently sidelined James without necessitating an expensive buyout. Lachlan, intrigued, told her to start working on it. (McKenna did not respond to requests for comment.)</p>
+<p>On September 14, 2023, Rupert, Lachlan, and a consortium of Fox and News Corp executives gathered to hear McKenna’s pitch for Project Family Harmony. The family trust, they all agreed, was untenable as it was currently structured.
+Lachlan had by now spent years building the case to his father that James was plotting a coup. In the fall of 2022, an unauthorized biography of Lachlan had been published in Australia containing an incendiary quote from an anonymous source about James’s purported plans: “Lachlan gets fired the day Rupert dies.” When the quote made international headlines, Lachlan told Rupert that James’s camp was responsible. A few months later, in January 2023, the Financial Times ran a story detailing “how the scions could battle for control” of the family trust after Rupert was gone. Once again, Lachlan pointed the finger at his brother.</p>
+<p>As it turned out, according to evidence that would later surface at trial, James had no involvement in either story—but Lachlan did. It was McKenna who had, with Lachlan’s approval, spent more than 14 hours giving anonymous interviews to the biographer. And Brian Nick, an executive at Fox, had anonymously briefed the Financial Times. (Nick denied providing information to the Financial Times.) But to Rupert, the stories only confirmed that he needed to act decisively.</p>
+<p>In October 2023, Kathryn told James that she thought he should reach out to his father and brother. They’d barely spoken in years, and though she didn’t yet know about their plans for the trust, she worried that Rupert and Lachlan were sinking too deep into their own conspiracy theories. James never got around to calling them. Later, he would wish he’d taken her advice.</p>
+<p>Over several weeks that fall, the participants in Project Family Harmony explored a range of aggressive options to neutralize James. PowerPoints were prepared; legal memos were produced. James was rarely invoked by name in these materials; he was referred to as “the troublesome beneficiary.”</p>
+<p>Rupert ultimately decided that the best course was to negate the voting power of James and his sisters. To do this, Rupert would have to amend the Murdoch family trust to give Lachlan unilateral control after he died. And because the trust was irrevocable, with amendments allowed only if they were in the interest of the beneficiaries, Rupert would have to show, in effect, that disenfranchising three of his children was actually best for them.</p>
+<p>McKenna drafted talking points for Rupert to use when discussing the amendment with his children. New directors were also secretly recruited to the trust, including Bill Barr, the two-time attorney general and a personal friend of Rupert’s, and a pair of lawyers who had scant experience with trust management but had the advantage of being politically connected in Nevada, where the inevitable litigation would play out.</p>
+<p>Meanwhile, James and his sisters—unaware of Rupert and Lachlan’s plotting—were making plans of their own. On September 20, 2023, they met in London to discuss arrangements for after their father’s death. Liz’s managing director, Mark Devereux, had realized that the Murdochs didn’t have a logistical plan for such a scenario. Who would release a statement? What would it say? What kind of funeral did Rupert want? A plan had been drawn up and code-named “Project Bridge,” after the protocols developed for Queen Elizabeth II’s death.</p>
+<p>In London, as the siblings talked through the details, their conversation turned to the long-term future of the companies. Prue asked James if he wanted to return as an executive, but he told her he had no interest.</p>
+<p>In late November, James, Liz, and Prue were invited to join a “special meeting” on Zoom to discuss the trust. When Liz found out what Rupert and Lachlan were about to do, she texted Lachlan and pleaded with him not to go through with it. “Today is about Dad’s wishes,” Lachlan responded. “It shouldn’t be difficult or controversial. Love you.”
+A less dysfunctional family, James and Kathryn told me, might have tried to have a normal conversation about their differences. Instead, in the Zoom meeting, on December 6, Rupert, surrounded by lawyers, read robotically from a script. Lachlan busied himself at an off-screen laptop and didn’t even look at the camera.</p>
+<p>Early on the morning of September 16, 2024, a fleet of black SUVs pulled up to the copper-domed Washoe County Courthouse in Reno. James and Kathryn stepped out of their car and made their way up the steps alongside Liz and Prue. About 30 minutes later, another convoy appeared, this one carrying Rupert and Lachlan. The Murdochs had coordinated their arrival times to ensure that they didn’t have to see one another outside the courtroom. Nobody wanted the half a dozen camera crews to capture evidence of the hostility that now defined their family.</p>
+<p>James and his sisters had filed their objection shortly after learning about their father’s amendment. The process had revealed, among other things, just how far apart James and his father were in their visions for the family’s media outlets. During James’s confrontational deposition, for instance, one of Rupert’s lawyers suggested that the success of Fox News derived from its willingness to pander to its viewers, sometimes at the expense of basic journalistic standards.</p>
+<p>Isn’t it true that Fox is the top cable-news outlet because it respects its audience and gives them what they want? the lawyer asked him.</p>
+<p>I would disagree with the idea that respect and giving people what they want are the same thing, James countered.
+But the lawyer didn’t seem interested in the distinction. Are you aware that Fox News lost a significant part of its audience when it called Arizona for Biden in 2020? he asked. James said he was. And you know that Fox won back most of that audience through its election-denial coverage, right? the lawyer said.</p>
+<p>Now, for the next six days, the two sides would make their case in court, testifying about some of the most painful episodes in the Murdoch family’s history as they wrestled over control of the empire. Rupert didn’t stick around to watch it—he was excused from the courtroom after testifying on the second day. “He claimed that he was sick, but I think it was cowardice,” James told me.</p>
+<p>The trial was closed to the press and public, and because Kathryn was not a party to the litigation, she waited in an anteroom with Liz’s and Prue’s husbands. After long days of testimony, the families would convene at a Lake Tahoe house that James and Kathryn were borrowing from friends (“There are no good hotels in Reno,” she told me) and recap the day’s events over glasses of wine. Sometimes there were dramatic reenactments; other times they indulged in gallows humor. They searched Google for Edmund Gorman, the Nevada probate commissioner overseeing the proceedings, hoping to ascertain any biographical details that might reveal his sympathies. He was frustratingly unreadable during the trial: They knew he wore polka-dot bow ties under his robes, and someone had reported seeing him once leave the courthouse in a loud purple sport coat. They learned that he was a duck hunter, and that he’d served on the board of the Reno Jazz Orchestra. This last fact prompted James to observe to his sisters, “He can’t be that bad.”</p>
+<p>James had resolved to approach the trial in a spirit of combat. “I’m good at that,” he told me later. “Stiffen your spine, harden your tummy.” Walking into the courtroom each day, past the scrum of reporters, he wore an expression of solemn professionalism. But it was harder than he’d expected to maintain personal detachment when the people on the other side of the courtroom were his father and brother. Watching these men he’d known his whole life, men he’d loved, he couldn’t escape one thought: How did we let it come to this?</p>
+<p>On the third day of the trial, James took the stand to testify. When he recounted the dinner at which Lachlan effectively ended their relationship over the proposed Disney deal, James surprised himself by starting to cry. But the memory didn’t seem to have the same effect on his brother, James told me: When Lachlan was asked if he had in fact told James he wouldn’t have a brother anymore if they pursued the sale, Lachlan responded flatly, “I don’t recall.”</p>
+<p>A month after the trial’s conclusion, while the commissioner was still deliberating, James decided to reach out to his father. The trial had gone well for him and his sisters; their lawyers were confident. Still, he knew the damage to his family might never be undone. Thanksgiving was approaching, and James was feeling sentimental. Maybe, he thought, his father might be open to a personal appeal, especially now that he looked to be on the verge of defeat.</p>
+<p>James, Liz, and Prue wrote their father a letter suggesting an alternative course. “Thanksgiving and Christmas are upon us and the three of us wanted to reach out to you personally to say that we miss you and love you,” they wrote. “Over and above any other feelings all of us may have—of upset and shock—our unifying emotion is sorrow and grief.”</p>
+<p>Maybe they could try to talk things out without lawyers and probate commissioners—and reach a compromise they all agreed on: “We are asking you with love to find a way to put an end to this destructive judicial path so that we can have a chance to heal as a collaborative and loving family.”
+A couple of days later, Rupert wrote back. He’d read his children’s testimony from the trial twice over. “Only to conclude that I was right,” he told them. He instructed them to have their lawyers contact his if they wanted to talk further. “Much love, Dad.”</p>
+<p>On December 7, the commissioner issued his ruling. Rupert and Lachlan had lost.</p>
+<p>The commissioner’s decision placed the fate of the Murdoch assets back in the same holding pattern it had been in for years. Barring a successful appeal, control of the companies would, in all likelihood, one day be split evenly among the four oldest children. Only now Rupert’s heirs were more divided than ever, with the chosen successor on one side, and his three alienated siblings on the other. What exactly that would mean for the empire was a question that wouldn’t be answered until their father died.</p>
+<p>In the meantime, James and Kathryn have focused on projects of their own.</p>
+<p>It’s hard to look at the couple’s political and philanthropic work, which Kathryn manages, without sensing an attempt at public repentance. They have given millions to Democratic campaigns and tens of millions to climate-change initiatives, and funded research on disinformation and political extremism. In 2021, Kathryn persuaded dozens of “democracy reform” groups to coalesce around the push for open primaries and ranked-choice voting, funding successful ballot initiatives in Alaska and Washington, D.C. James, meanwhile, is once again doing business in India, where he has invested in one of the country’s largest media companies. He has also bought large stakes in the Tribeca Film Festival and Art Basel.</p>
+<p>What would the Murdochs’ conservative news outlets look like if James had his way? This had become a central question in the legal battle over the trust; Rupert and Lachlan argue that James would sink the companies’ value by changing the outlets’ politics.</p>
+<p>James and Kathryn were usually cautious when I asked about changes they would want to see at the family’s news outlets. But I got glimpses of their thinking. Once, over dinner in Washington, Kathryn told me she wasn’t sure if Fox News could still be reformed. “It doesn’t have a clear purpose in the ecosystem anymore,” she said.
+On another occasion, I asked James if The Wall Street Journal ’s editorial page might serve as a model for a more responsible Fox News. He winced and said he hoped they could do better than that. At various points, both of them mentioned their investment in The Bulwark, which was founded as an organ of Never Trump conservatism, as proof that they weren’t categorically averse to “center right” media—though, of course, re­inventing Fox News in The Bulwark’s image might be the surest path to a viewer revolt.</p>
+<p>McKay Coppins: The Bulwark’s writers are the new outlaws of conservative media</p>
+<p>The one thing James has said consistently is that any reforms he might seek would focus on corporate and editorial governance, not political orientation. Fox News, he thought, could still report from a conservative perspective without, say, giving a platform to unqualified doctors to spread medical misinformation during a pandemic, or misrepresenting an oil-company shill as an expert on climate change. James believed this wasn’t just the right thing to do, but the fiscally prudent one: Allowing Trump’s former lawyer Sidney Powell on air to spread voting-machine conspiracy theories had already cost Fox three-quarters of a billion dollars, and an even larger defamation suit was still pending. (James stressed that reforming the outlets would require support from the board.)
+For now, James is left struggling to answer the question he found himself asking in the courtroom—how did we let it come to this? His 93-year-old father will, despite his most fervent wishes, die one day. And when he does, he will leave behind a family at war with itself—a bevy of estranged children and ex-wives exchanging awkward greetings at an expensive funeral.</p>
+<p>Last year, James told me, he reread Memoirs of Hadrian, Marguerite Yourcenar’s 1951 novel about the titular second-century emperor of Rome. “I hate to use Roman emperors as a metaphor, because it’s totally douchey,” he told me in a moment of self-deprecating clarity. But when he came across a passage about a dying ruler in search of an heir, James felt that he suddenly understood something about his father. He committed the paragraph to memory, and quoted it repeatedly in the time we spent together. Hadrian’s imperial predecessor is “refusing to face his end.” Hadrian pities him: “We were too different for him to find in me what most people who have wielded total authority seek desperately on their deathbeds, a docile successor pledged in advance to the same methods, and even to the same errors.”</p>
+<p>For decades, James realized, Rupert had tried to turn his children into vehicles for dynastic ambition—walking nodes of immortality. In the process, he’d wrecked the family. Now, at 52, James seems as if he is trying to disentangle himself from the character he once played in the Murdoch story.</p>
+<p>One day late this past fall, I met James in his office. The trust trial had recently concluded, and he was tired and uncharacteristically disheveled—bags under his eyes, hair askew. He recounted the beats of the courtroom drama in between stifled yawns, but eventually lost interest. He seemed to have something else on his mind. He told me about a commencement speech he’d once given at a small university in Europe, where he told the graduates never to get themselves into a position where other people were defining success for them. It was good advice, he thought, and he wondered how his life would have been different if he’d taken it himself.</p>
+<p>“My kind of regret—” he began, before hastily correcting himself. “I try not to have regrets, because I’m so lucky.” His eyes drifted toward the window, and for a moment, he looked strangely small at the end of the long conference-room table, almost like a little boy. “I used to paint a lot,” he told me. “I thought about being an architect. I did film animation in school.”</p>
+<p>He was struggling to express what he wanted to say. “I had a story—” he tried, but started over. “In my head, there were so many—” He stopped again, and seemed to give up.</p>
+<p>Maybe it was hopeless. Maybe nobody wanted to hear a rich heir from a powerful family complain about his father. History had plenty of those.</p>
+<p><em>This article appears in the April 2025 print edition with the headline “Growing Up Murdoch.” ​ It has been updated to reflect that a spokesperson for Lachlan Murdoch denied that Lachlan had suspicions about Wendi Deng or objections to his father marrying her, and denied that Lachlan used the term ShitCo. The article has also been updated with additional context about two News of the World employees who testified before a parliamentary committee about phone-hacking.</em></p>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
+
+<span class="c1"># Define the neural network layers</span>
+<span class="k">def</span> <span class="nf">define_layers</span><span class="p">():</span>
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="s1">&#39;Suis&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;DNA, RNA,  5%&#39;</span><span class="p">,</span> <span class="s1">&#39;Peptidoglycans, Lipoteichoics&#39;</span><span class="p">,</span> <span class="s1">&#39;Lipopolysaccharide&#39;</span><span class="p">,</span> <span class="s1">&#39;N-Formylmethionine&#39;</span><span class="p">,</span> <span class="s2">&quot;Glucans, Chitin&quot;</span><span class="p">,</span> <span class="s1">&#39;Specific Antigens&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;Voir&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;PRR &amp; ILCs, 20%&#39;</span><span class="p">],</span>  
+        <span class="s1">&#39;Choisis&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;CD8+, 50%&#39;</span><span class="p">,</span> <span class="s1">&#39;CD4+&#39;</span><span class="p">],</span>  
+        <span class="s1">&#39;Deviens&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;TNF-α, IL-6, IFN-γ&#39;</span><span class="p">,</span> <span class="s1">&#39;PD-1 &amp; CTLA-4&#39;</span><span class="p">,</span> <span class="s1">&#39;Tregs, IL-10, TGF-β, 20%&#39;</span><span class="p">],</span>  
+        <span class="s2">&quot;M&#39;èléve&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Complement System&#39;</span><span class="p">,</span> <span class="s1">&#39;Platelet System&#39;</span><span class="p">,</span> <span class="s1">&#39;Granulocyte System&#39;</span><span class="p">,</span> <span class="s1">&#39;Innate Lymphoid Cells, 5%&#39;</span><span class="p">,</span> <span class="s1">&#39;Adaptive Lymphoid Cells&#39;</span><span class="p">]</span>  
+    <span class="p">}</span>
+
+<span class="c1"># Assign colors to nodes</span>
+<span class="k">def</span> <span class="nf">assign_colors</span><span class="p">():</span>
+    <span class="n">color_map</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s1">&#39;yellow&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;PRR &amp; ILCs, 20%&#39;</span><span class="p">],</span>  
+        <span class="s1">&#39;paleturquoise&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Specific Antigens&#39;</span><span class="p">,</span> <span class="s1">&#39;CD4+&#39;</span><span class="p">,</span> <span class="s1">&#39;Tregs, IL-10, TGF-β, 20%&#39;</span><span class="p">,</span> <span class="s1">&#39;Adaptive Lymphoid Cells&#39;</span><span class="p">],</span>  
+        <span class="s1">&#39;lightgreen&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Glucans, Chitin&quot;</span><span class="p">,</span> <span class="s1">&#39;PD-1 &amp; CTLA-4&#39;</span><span class="p">,</span> <span class="s1">&#39;Platelet System&#39;</span><span class="p">,</span> <span class="s1">&#39;Innate Lymphoid Cells, 5%&#39;</span><span class="p">,</span> <span class="s1">&#39;Granulocyte System&#39;</span><span class="p">],</span>  
+        <span class="s1">&#39;lightsalmon&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Lipopolysaccharide&#39;</span><span class="p">,</span> <span class="s1">&#39;N-Formylmethionine&#39;</span><span class="p">,</span> <span class="s1">&#39;CD8+, 50%&#39;</span><span class="p">,</span> <span class="s1">&#39;TNF-α, IL-6, IFN-γ&#39;</span><span class="p">,</span> <span class="s1">&#39;Complement System&#39;</span><span class="p">],</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="p">{</span><span class="n">node</span><span class="p">:</span> <span class="n">color</span> <span class="k">for</span> <span class="n">color</span><span class="p">,</span> <span class="n">nodes</span> <span class="ow">in</span> <span class="n">color_map</span><span class="o">.</span><span class="n">items</span><span class="p">()</span> <span class="k">for</span> <span class="n">node</span> <span class="ow">in</span> <span class="n">nodes</span><span class="p">}</span>
+
+<span class="c1"># Define edge weights</span>
+<span class="k">def</span> <span class="nf">define_edges</span><span class="p">():</span>
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="p">(</span><span class="s1">&#39;DNA, RNA,  5%&#39;</span><span class="p">,</span> <span class="s1">&#39;PRR &amp; ILCs, 20%&#39;</span><span class="p">):</span> <span class="s1">&#39;1/99&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;Peptidoglycans, Lipoteichoics&#39;</span><span class="p">,</span> <span class="s1">&#39;PRR &amp; ILCs, 20%&#39;</span><span class="p">):</span> <span class="s1">&#39;5/95&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;Lipopolysaccharide&#39;</span><span class="p">,</span> <span class="s1">&#39;PRR &amp; ILCs, 20%&#39;</span><span class="p">):</span> <span class="s1">&#39;20/80&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;N-Formylmethionine&#39;</span><span class="p">,</span> <span class="s1">&#39;PRR &amp; ILCs, 20%&#39;</span><span class="p">):</span> <span class="s1">&#39;51/49&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s2">&quot;Glucans, Chitin&quot;</span><span class="p">,</span> <span class="s1">&#39;PRR &amp; ILCs, 20%&#39;</span><span class="p">):</span> <span class="s1">&#39;80/20&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;Specific Antigens&#39;</span><span class="p">,</span> <span class="s1">&#39;PRR &amp; ILCs, 20%&#39;</span><span class="p">):</span> <span class="s1">&#39;95/5&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;PRR &amp; ILCs, 20%&#39;</span><span class="p">,</span> <span class="s1">&#39;CD8+, 50%&#39;</span><span class="p">):</span> <span class="s1">&#39;20/80&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;PRR &amp; ILCs, 20%&#39;</span><span class="p">,</span> <span class="s1">&#39;CD4+&#39;</span><span class="p">):</span> <span class="s1">&#39;80/20&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;CD8+, 50%&#39;</span><span class="p">,</span> <span class="s1">&#39;TNF-α, IL-6, IFN-γ&#39;</span><span class="p">):</span> <span class="s1">&#39;49/51&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;CD8+, 50%&#39;</span><span class="p">,</span> <span class="s1">&#39;PD-1 &amp; CTLA-4&#39;</span><span class="p">):</span> <span class="s1">&#39;80/20&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;CD8+, 50%&#39;</span><span class="p">,</span> <span class="s1">&#39;Tregs, IL-10, TGF-β, 20%&#39;</span><span class="p">):</span> <span class="s1">&#39;95/5&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;CD4+&#39;</span><span class="p">,</span> <span class="s1">&#39;TNF-α, IL-6, IFN-γ&#39;</span><span class="p">):</span> <span class="s1">&#39;5/95&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;CD4+&#39;</span><span class="p">,</span> <span class="s1">&#39;PD-1 &amp; CTLA-4&#39;</span><span class="p">):</span> <span class="s1">&#39;20/80&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;CD4+&#39;</span><span class="p">,</span> <span class="s1">&#39;Tregs, IL-10, TGF-β, 20%&#39;</span><span class="p">):</span> <span class="s1">&#39;51/49&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;TNF-α, IL-6, IFN-γ&#39;</span><span class="p">,</span> <span class="s1">&#39;Complement System&#39;</span><span class="p">):</span> <span class="s1">&#39;80/20&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;TNF-α, IL-6, IFN-γ&#39;</span><span class="p">,</span> <span class="s1">&#39;Platelet System&#39;</span><span class="p">):</span> <span class="s1">&#39;85/15&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;TNF-α, IL-6, IFN-γ&#39;</span><span class="p">,</span> <span class="s1">&#39;Granulocyte System&#39;</span><span class="p">):</span> <span class="s1">&#39;90/10&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;TNF-α, IL-6, IFN-γ&#39;</span><span class="p">,</span> <span class="s1">&#39;Innate Lymphoid Cells, 5%&#39;</span><span class="p">):</span> <span class="s1">&#39;95/5&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;TNF-α, IL-6, IFN-γ&#39;</span><span class="p">,</span> <span class="s1">&#39;Adaptive Lymphoid Cells&#39;</span><span class="p">):</span> <span class="s1">&#39;99/1&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;PD-1 &amp; CTLA-4&#39;</span><span class="p">,</span> <span class="s1">&#39;Complement System&#39;</span><span class="p">):</span> <span class="s1">&#39;1/9&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;PD-1 &amp; CTLA-4&#39;</span><span class="p">,</span> <span class="s1">&#39;Platelet System&#39;</span><span class="p">):</span> <span class="s1">&#39;1/8&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;PD-1 &amp; CTLA-4&#39;</span><span class="p">,</span> <span class="s1">&#39;Granulocyte System&#39;</span><span class="p">):</span> <span class="s1">&#39;1/7&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;PD-1 &amp; CTLA-4&#39;</span><span class="p">,</span> <span class="s1">&#39;Innate Lymphoid Cells, 5%&#39;</span><span class="p">):</span> <span class="s1">&#39;1/6&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;PD-1 &amp; CTLA-4&#39;</span><span class="p">,</span> <span class="s1">&#39;Adaptive Lymphoid Cells&#39;</span><span class="p">):</span> <span class="s1">&#39;1/5&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;Tregs, IL-10, TGF-β, 20%&#39;</span><span class="p">,</span> <span class="s1">&#39;Complement System&#39;</span><span class="p">):</span> <span class="s1">&#39;1/99&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;Tregs, IL-10, TGF-β, 20%&#39;</span><span class="p">,</span> <span class="s1">&#39;Platelet System&#39;</span><span class="p">):</span> <span class="s1">&#39;5/95&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;Tregs, IL-10, TGF-β, 20%&#39;</span><span class="p">,</span> <span class="s1">&#39;Granulocyte System&#39;</span><span class="p">):</span> <span class="s1">&#39;10/90&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;Tregs, IL-10, TGF-β, 20%&#39;</span><span class="p">,</span> <span class="s1">&#39;Innate Lymphoid Cells, 5%&#39;</span><span class="p">):</span> <span class="s1">&#39;15/85&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;Tregs, IL-10, TGF-β, 20%&#39;</span><span class="p">,</span> <span class="s1">&#39;Adaptive Lymphoid Cells&#39;</span><span class="p">):</span> <span class="s1">&#39;20/80&#39;</span>
+    <span class="p">}</span>
+
+<span class="c1"># Define edges to be highlighted in black</span>
+<span class="k">def</span> <span class="nf">define_black_edges</span><span class="p">():</span>
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="p">(</span><span class="s1">&#39;Tregs, IL-10, TGF-β, 20%&#39;</span><span class="p">,</span> <span class="s1">&#39;Complement System&#39;</span><span class="p">):</span> <span class="s1">&#39;1/99&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;Tregs, IL-10, TGF-β, 20%&#39;</span><span class="p">,</span> <span class="s1">&#39;Platelet System&#39;</span><span class="p">):</span> <span class="s1">&#39;5/95&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;Tregs, IL-10, TGF-β, 20%&#39;</span><span class="p">,</span> <span class="s1">&#39;Granulocyte System&#39;</span><span class="p">):</span> <span class="s1">&#39;10/90&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;Tregs, IL-10, TGF-β, 20%&#39;</span><span class="p">,</span> <span class="s1">&#39;Innate Lymphoid Cells, 5%&#39;</span><span class="p">):</span> <span class="s1">&#39;15/85&#39;</span><span class="p">,</span>
+        <span class="p">(</span><span class="s1">&#39;Tregs, IL-10, TGF-β, 20%&#39;</span><span class="p">,</span> <span class="s1">&#39;Adaptive Lymphoid Cells&#39;</span><span class="p">):</span> <span class="s1">&#39;20/80&#39;</span>
+    <span class="p">}</span>
+
+<span class="c1"># Calculate node positions</span>
+<span class="k">def</span> <span class="nf">calculate_positions</span><span class="p">(</span><span class="n">layer</span><span class="p">,</span> <span class="n">x_offset</span><span class="p">):</span>
+    <span class="n">y_positions</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="nb">len</span><span class="p">(</span><span class="n">layer</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">layer</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">layer</span><span class="p">))</span>
+    <span class="k">return</span> <span class="p">[(</span><span class="n">x_offset</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">y_positions</span><span class="p">]</span>
+
+<span class="c1"># Create and visualize the neural network graph</span>
+<span class="k">def</span> <span class="nf">visualize_nn</span><span class="p">():</span>
+    <span class="n">layers</span> <span class="o">=</span> <span class="n">define_layers</span><span class="p">()</span>
+    <span class="n">colors</span> <span class="o">=</span> <span class="n">assign_colors</span><span class="p">()</span>
+    <span class="n">edges</span> <span class="o">=</span> <span class="n">define_edges</span><span class="p">()</span>
+    <span class="n">black_edges</span> <span class="o">=</span> <span class="n">define_black_edges</span><span class="p">()</span>
+    
+    <span class="n">G</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">DiGraph</span><span class="p">()</span>
+    <span class="n">pos</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="n">node_colors</span> <span class="o">=</span> <span class="p">[]</span>
+    
+    <span class="c1"># Create mapping from original node names to numbered labels</span>
+    <span class="n">mapping</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="n">counter</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">for</span> <span class="n">layer</span> <span class="ow">in</span> <span class="n">layers</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+        <span class="k">for</span> <span class="n">node</span> <span class="ow">in</span> <span class="n">layer</span><span class="p">:</span>
+            <span class="n">mapping</span><span class="p">[</span><span class="n">node</span><span class="p">]</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">counter</span><span class="si">}</span><span class="s2">. </span><span class="si">{</span><span class="n">node</span><span class="si">}</span><span class="s2">&quot;</span>
+            <span class="n">counter</span> <span class="o">+=</span> <span class="mi">1</span>
+            
+    <span class="c1"># Add nodes with new numbered labels and assign positions</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">layer_name</span><span class="p">,</span> <span class="n">nodes</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">layers</span><span class="o">.</span><span class="n">items</span><span class="p">()):</span>
+        <span class="n">positions</span> <span class="o">=</span> <span class="n">calculate_positions</span><span class="p">(</span><span class="n">nodes</span><span class="p">,</span> <span class="n">x_offset</span><span class="o">=</span><span class="n">i</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">node</span><span class="p">,</span> <span class="n">position</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">nodes</span><span class="p">,</span> <span class="n">positions</span><span class="p">):</span>
+            <span class="n">new_node</span> <span class="o">=</span> <span class="n">mapping</span><span class="p">[</span><span class="n">node</span><span class="p">]</span>
+            <span class="n">G</span><span class="o">.</span><span class="n">add_node</span><span class="p">(</span><span class="n">new_node</span><span class="p">,</span> <span class="n">layer</span><span class="o">=</span><span class="n">layer_name</span><span class="p">)</span>
+            <span class="n">pos</span><span class="p">[</span><span class="n">new_node</span><span class="p">]</span> <span class="o">=</span> <span class="n">position</span>
+            <span class="n">node_colors</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">colors</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">node</span><span class="p">,</span> <span class="s1">&#39;lightgray&#39;</span><span class="p">))</span>
+    
+    <span class="c1"># Add edges with updated node labels</span>
+    <span class="n">edge_colors</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">target</span><span class="p">),</span> <span class="n">weight</span> <span class="ow">in</span> <span class="n">edges</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="k">if</span> <span class="n">source</span> <span class="ow">in</span> <span class="n">mapping</span> <span class="ow">and</span> <span class="n">target</span> <span class="ow">in</span> <span class="n">mapping</span><span class="p">:</span>
+            <span class="n">new_source</span> <span class="o">=</span> <span class="n">mapping</span><span class="p">[</span><span class="n">source</span><span class="p">]</span>
+            <span class="n">new_target</span> <span class="o">=</span> <span class="n">mapping</span><span class="p">[</span><span class="n">target</span><span class="p">]</span>
+            <span class="n">G</span><span class="o">.</span><span class="n">add_edge</span><span class="p">(</span><span class="n">new_source</span><span class="p">,</span> <span class="n">new_target</span><span class="p">,</span> <span class="n">weight</span><span class="o">=</span><span class="n">weight</span><span class="p">)</span>
+            <span class="n">edge_colors</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;black&#39;</span> <span class="k">if</span> <span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">target</span><span class="p">)</span> <span class="ow">in</span> <span class="n">black_edges</span> <span class="k">else</span> <span class="s1">&#39;lightgrey&#39;</span><span class="p">)</span>
+    
+    <span class="c1"># Draw the graph</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+    <span class="n">edges_labels</span> <span class="o">=</span> <span class="p">{(</span><span class="n">u</span><span class="p">,</span> <span class="n">v</span><span class="p">):</span> <span class="n">d</span><span class="p">[</span><span class="s2">&quot;weight&quot;</span><span class="p">]</span> <span class="k">for</span> <span class="n">u</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">G</span><span class="o">.</span><span class="n">edges</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="kc">True</span><span class="p">)}</span>
+    
+    <span class="n">nx</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span>
+        <span class="n">G</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">with_labels</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">node_color</span><span class="o">=</span><span class="n">node_colors</span><span class="p">,</span> <span class="n">edge_color</span><span class="o">=</span><span class="n">edge_colors</span><span class="p">,</span>
+        <span class="n">node_size</span><span class="o">=</span><span class="mi">3000</span><span class="p">,</span> <span class="n">font_size</span><span class="o">=</span><span class="mi">9</span><span class="p">,</span> <span class="n">connectionstyle</span><span class="o">=</span><span class="s2">&quot;arc3,rad=0.2&quot;</span>
+    <span class="p">)</span>
+    <span class="n">nx</span><span class="o">.</span><span class="n">draw_networkx_edge_labels</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">edge_labels</span><span class="o">=</span><span class="n">edges_labels</span><span class="p">,</span> <span class="n">font_size</span><span class="o">=</span><span class="mi">8</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;OPRAH™: Distributed Network&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">18</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Run the visualization</span>
+<span class="n">visualize_nn</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<img alt="../../_images/be180b9fcbdcf1e6157ac6249688e1a437c65d263b846f06ef45e8c433ee83cb.png" src="../../_images/be180b9fcbdcf1e6157ac6249688e1a437c65d263b846f06ef45e8c433ee83cb.png" />
+</div>
+</div>
+<figure class="align-default" id="id3">
+<a class="reference internal image-reference" href="figures/blanche.*"><img alt="figures/blanche.*" src="figures/blanche.*" style="width: 1px; height: 1px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 42 </span><span class="caption-text">Icarus represents a rapid, elegant escape from the labyrinth by transcending into the third dimension—a brilliant shortcut past the father’s meticulous, earthbound craftsmanship. Daedalus, the master architect, constructs a tortuous, enclosed structure that forces problem-solving along a constrained plane. Icarus, impatient, bypasses the entire system, opting for flight: the most immediate and efficient exit. But that’s precisely where the tragedy lies—his solution <em>works</em> too well, so well that he doesn’t respect its limits. The sun, often emphasized as the moralistic warning, is really just a reminder that even the most beautiful, radical solutions have constraints. Icarus doesn’t just escape; he ascends. But in doing so, he loses the ability to iterate, to adjust dynamically. His shortcut is both his liberation and his doom. The real irony? Daedalus, bound to linear problem-solving, actually survives. He flies, but conservatively. Icarus, in contrast, embodies the hubris of absolute success—skipping all iterative safeguards, assuming pure ascent is sustainable.  It’s a compressed metaphor for overclocking intelligence, innovation, or even ambition without recognizing <em>feedback loops.</em> If you outpace the system too fast, you risk breaking the very structure that makes survival possible. It’s less about the sun and more about respecting the transition phase between escape and mastery.</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="pairs-jh">
+<h2>1 PAIRS&#64;JH<a class="headerlink" href="#pairs-jh" title="Permalink to this heading">#</a></h2>
+<p>Python, AI, R, Stata, JavaScript, and HTML. In this digital information age, these shouldn’t need any introduction.</p>
+<p>Yet at the <code class="docutils literal notranslate"><span class="pre">#1</span></code>ranked department of Epidemiology in the US</p>
+<p><img alt="" src="https://careerkarma.com/blog/wp-content/uploads/2021/04/Programming-Languages-Report-Infographics-04.jpg" /></p>
+<blockquote>
+<div><p><em>Most <a class="reference external" href="https://careerkarma.com/blog/top-programming-languages-2021/">Popular</a> Programming Languages by Community Activity on Stack Overflow</em></p>
+</div></blockquote>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># Data provided with three topics</span>
+<span class="n">repository_counts</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;python&#39;</span><span class="p">:</span> <span class="mi">457293</span><span class="p">,</span>
+    <span class="s1">&#39;r&#39;</span><span class="p">:</span> <span class="mi">33741</span><span class="p">,</span>
+    <span class="s1">&#39;stata&#39;</span><span class="p">:</span> <span class="mi">679</span>
+<span class="p">}</span>
+
+<span class="c1"># Create the normal scale histogram</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+
+<span class="c1"># Normal scale</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">repository_counts</span><span class="o">.</span><span class="n">keys</span><span class="p">(),</span> <span class="n">repository_counts</span><span class="o">.</span><span class="n">values</span><span class="p">(),</span> <span class="n">color</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="s1">&#39;red&#39;</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Number of Repositories (Normal Scale)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Topics&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Number of Repositories&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="s1">&#39;top&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="s1">&#39;right&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="c1"># Log10 scale</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">repository_counts</span><span class="o">.</span><span class="n">keys</span><span class="p">(),</span> <span class="n">repository_counts</span><span class="o">.</span><span class="n">values</span><span class="p">(),</span> <span class="n">color</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="s1">&#39;red&#39;</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">yscale</span><span class="p">(</span><span class="s1">&#39;log&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Number of Repositories (Log10 Scale)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Topics&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Number of Repositories (Log Scale)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="s1">&#39;top&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span><span class="o">.</span><span class="n">spines</span><span class="p">[</span><span class="s1">&#39;right&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<img alt="../../_images/c74d5d642a82ed5beb88f8eee6d447a10a4b1ae12258039d042c708bf905ee23.png" src="../../_images/c74d5d642a82ed5beb88f8eee6d447a10a4b1ae12258039d042c708bf905ee23.png" />
+</div>
+</div>
+<section id="elevator-pitch-for-python">
+<h3>Elevator Pitch for Python<a class="headerlink" href="#elevator-pitch-for-python" title="Permalink to this heading">#</a></h3>
+<p><strong>Number of public repositories on GitHub matching the topics <code class="docutils literal notranslate"><span class="pre">python</span></code>, <code class="docutils literal notranslate"><span class="pre">r</span></code>, and <code class="docutils literal notranslate"><span class="pre">stata</span></code> as of Thu Aug 1, 2024.</strong></p>
+<p>For nearly 20 years, the 750 series has been providing students with Stata code to help develop concepts taught in class. Due to increasing demand, the series introduced R code as well. The department is clearly catching up with trends, but from the opposite side of the spectrum. I speculate that very soon students will be demanding code in Python.</p>
+</section>
+<section id="heres-why">
+<h3>Here’s why:<a class="headerlink" href="#heres-why" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Versatility and Accessibility</strong>:</p>
+<ul class="simple">
+<li><p>Python is a general-purpose language that excels in various domains such as data science, machine learning, web development, and automation. Its syntax is straightforward and readable, making it accessible for beginners and efficient for experts.</p></li>
+</ul>
+</li>
+<li><p><strong>Rich Ecosystem</strong>:</p>
+<ul class="simple">
+<li><p>Python boasts an extensive library ecosystem. Packages like <code class="docutils literal notranslate"><span class="pre">pandas</span></code>, <code class="docutils literal notranslate"><span class="pre">numpy</span></code>, <code class="docutils literal notranslate"><span class="pre">scikit-learn</span></code>, and <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> are essential for data analysis and visualization. <code class="docutils literal notranslate"><span class="pre">TensorFlow</span></code> and <code class="docutils literal notranslate"><span class="pre">PyTorch</span></code> are leading libraries for machine learning.</p></li>
+</ul>
+</li>
+<li><p><strong>Industry and Academic Adoption</strong>:</p>
+<ul class="simple">
+<li><p>Python is the most popular programming language in both academia and industry. Leading tech companies like Google, Facebook, and Netflix rely heavily on Python. In academia, Python is increasingly the language of choice for teaching data science and computational biology.</p></li>
+</ul>
+</li>
+<li><p><strong>Community and Support</strong>:</p>
+<ul class="simple">
+<li><p>Python has a vast and active community. The abundance of tutorials, forums, and conferences ensures that students and researchers can find support and resources easily.</p></li>
+</ul>
+</li>
+<li><p><strong>Interoperability</strong>:</p>
+<ul class="simple">
+<li><p>Python integrates seamlessly with other languages and technologies, making it a versatile tool in multi-language projects. It can be used to glue together workflows involving R, Stata, and even C++ or Java.</p></li>
+</ul>
+</li>
+<li><p><strong>Future-Proofing</strong>:</p>
+<ul class="simple">
+<li><p>As data science and machine learning continue to evolve, Python is at the forefront of innovation. Learning Python equips students with skills that are highly relevant and in demand.</p></li>
+</ul>
+</li>
+</ol>
+<p><strong>Conclusion</strong>:
+The overwhelming number of public repositories and the growing interest in Python highlight its importance and utility. Adopting Python in our curriculum will not only meet the current demand but also prepare our students for the future. Let’s position our department at the cutting edge of this trend.</p>
+<hr class="docutils" />
+<Details>
+   <iframe src="https://survey.stackoverflow.co/2023/" style="width: 100%; height: 2000px"></iframe>
+</Details>
+<p>While <code class="docutils literal notranslate"><span class="pre">AI</span></code> isn’t a language, its included here to represent langugage models, able to generate code in any of these programming languages following a prompt in natural languages such as English, Madarin, Hindi, Portugues, and Spanish.</p>
+<p>One doesn’t have to be proficient in any of these languages anymore, as long as you can find efficient ways of communicating with an AI tool such as ChatGPT.</p>
+<p>In pitching this idea to the head of the epidemiology department, the focus should be on the unique qualities and preferences of <a class="reference external" href="https://abikesa.github.io/philosophy/">Gen Z</a>, making a case that dynamic, interactive learning tools like web apps align with their mindset.</p>
+<p><strong>Pitch Outline:</strong></p>
+<p><em>Subject: Adapting to Gen Z Learners: Embracing Dynamic Educational Tools in Epidemiology</em></p>
+<hr class="docutils" />
+<p><strong>1. Understanding the Gen Z Graduate Student:</strong></p>
+<p>Today’s graduate students in epidemiology predominantly belong to Generation Z (born 1997-2013). This generation has grown up with smartphones, social media, and instantaneous access to information. They’ve never known a world without dynamic content and are accustomed to highly personalized, interactive experiences. Static educational materials—textbooks, PDFs, and even traditional PowerPoints—do not engage them in the same way. In contrast, interactive web apps fit their learning style and can significantly enhance their understanding of complex epidemiological concepts.</p>
+<hr class="docutils" />
+<p><strong>2. Why Web Apps Are the Future of Epidemiology Education:</strong></p>
+<ul class="simple">
+<li><p><strong>Active vs. Passive Learning</strong>: Gen Z students learn best through <code class="docutils literal notranslate"><span class="pre">engagement</span></code> and real-time interaction. A static lecture or reading assignment only scratches the surface. With interactive web apps, students can simulate real-world epidemiological scenarios, test hypotheses, and instantly see the consequences of different variables. For example, simulating outbreaks in different environments helps them visualize the spread of diseases in real-time.</p></li>
+<li><p><strong>Customization</strong>: Web apps can be tailored to different learning levels, from beginner to advanced. Graduate students can have the flexibility to dive deeper into more complex areas or repeat basic concepts as needed. Also, <code class="docutils literal notranslate"><span class="pre">simulations</span></code> will resemble the modern <code class="docutils literal notranslate"><span class="pre">video</span> <span class="pre">games</span></code>, whose underlying GPUs have shaped the current AI revolution. Bridging these two will link epidemiology to silicon valley. Let’s lead this rebirth!</p></li>
+<li><p><strong>Instant Feedback</strong>: Unlike static material, dynamic platforms provide instant feedback, which is key to learning. By engaging with simulations, quizzes, and interactive tools, students can correct misunderstandings immediately, leading to better retention and application of knowledge.</p></li>
+</ul>
+<hr class="docutils" />
+<p><strong>3. Dynamic Tools for the Entire Epidemiology Ecosystem:</strong></p>
+<p>Beyond students, web apps are essential for professionals across the spectrum in public health and epidemiology:</p>
+<ul class="simple">
+<li><p><strong>For Professors</strong>: Web apps enable professors to monitor progress in real time and offer personalized feedback. Instead of grading static assignments, professors can assess students based on real-time engagement with case studies and data sets in interactive platforms.</p></li>
+<li><p><strong>For Patients and Public Health Officials</strong>: Interactive epidemiological tools can be extended to patients and public health professionals to visualize local outbreaks, predict trends, and implement preventive measures. Such web-based tools can also serve as educational platforms for non-experts, offering dynamic content that conveys critical health information in an accessible way.</p></li>
+<li><p><strong>For Peer-reviewed Journals</strong>: A <a class="reference external" href="https://jamanetwork.com/journals/jama/article-abstract/2822922">shift</a> from <code class="docutils literal notranslate"><span class="pre">static</span></code> articles to <code class="docutils literal notranslate"><span class="pre">interactive</span></code> research presentations is already happening. Epidemiology journals that provide accompanying dynamic tools for interpreting datasets will engage a wider audience and increase the accessibility and impact of cutting-edge research.</p></li>
+</ul>
+<hr class="docutils" />
+<p><strong>4. Gen Z is Pragmatic and Solutions-focused—Let’s Meet Them There</strong></p>
+<p>Gen Z isn’t just looking for theoretical knowledge; they want solutions. Dynamic tools fit their problem-solving mindset and offer hands-on, practical applications of epidemiological theories and models. By integrating web apps into our curriculum, we are not only engaging students in a more meaningful way but also preparing them to address real-world public health crises using modern technology.</p>
+<hr class="docutils" />
+<p><strong>Conclusion:</strong>
+Moving towards dynamic, interactive web apps will not only revolutionize our approach to teaching epidemiology but also place our department at the cutting edge of public health education. Let’s lead the way in adapting to the future of education by meeting the needs and preferences of the Gen Z learners who are already shaping the field of epidemiology.</p>
+<hr class="docutils" />
+<p>This approach capitalizes on Gen Z’s strengths and pragmatism, emphasizing how dynamic tools will improve learning outcomes for students and professionals alike.</p>
+</section>
+</section>
+<section id="elevator-pitch">
+<h2>2 Elevator Pitch<a class="headerlink" href="#elevator-pitch" title="Permalink to this heading">#</a></h2>
+<p><strong>“Revolutionizing Epidemiology with PAIRS: A Dynamic, Collaborative Platform”</strong></p>
+<p>Dr. Mehta, imagine an epidemiology department where cutting-edge, dynamic tools are at the heart of research and education. Our current reliance on commercial software like Stata, while effective, limits accessibility and collaboration due to cost barriers. It’s time for a disruptive change that leverages the best of open-source technology.</p>
+<p>I propose the PAIRS platform—Python, Artificial Intelligence, R, and Stata—integrated into a seamless, collaborative environment using Jupyter Books and GitHub. This approach offers several advantages:</p>
+<ol class="arabic simple">
+<li><p><strong>Accessibility and Cost-Effectiveness:</strong> By transitioning to open-source tools like R and Python, we make powerful statistical analysis accessible to everyone, regardless of budget constraints.</p></li>
+<li><p><strong>Dynamic Learning and Research:</strong> Jupyter Books hosted on GitHub allow for continuous updates, interactive learning, and real-time collaboration. This transforms static documents into living, breathing resources.</p></li>
+<li><p><strong>Enhanced Collaboration:</strong> GitHub’s robust platform for version control and collaboration is already the standard in the tech world. Adopting this in epidemiology will foster easier sharing of scripts, data, and findings, enhancing teamwork and innovation.</p></li>
+<li><p><strong>Future-Proofing Our Department:</strong> By embracing these modern tools, we position our department at the forefront of educational and research innovation, ensuring we maintain our top-rated status and attract the best minds.</p></li>
+</ol>
+<p><strong>Incorporating Absolute Risks into the Curriculum:</strong></p>
+<p>In addition to the PAIRS platform, we must shift our curriculum’s focus from merely identifying risk factors through multivariable regression to understanding and communicating absolute risks. Absolute risks provide a more holistic view by considering the combined effect of multiple risk factors on an individual, which is crucial for informing public health policy and clinical decision-making.</p>
+<p>To facilitate this, I propose integrating interactive web apps into our curriculum. These apps, built using HTML and JavaScript, allow students to calculate and visualize absolute risks. I’ve already developed a platform that embeds such apps within Jupyter Books, combining the strengths of Python, R, Stata, and JavaScript.</p>
+<p><strong>Key Benefits:</strong></p>
+<ul class="simple">
+<li><p><strong>Personalized Learning:</strong> Students will develop and embed interactive apps within their Jupyter Books, enhancing their ability to communicate complex data intuitively.</p></li>
+<li><p><strong>Hands-On Experience:</strong> By working with real-world data and creating tools that can directly impact public health and clinical practice, students gain practical, actionable skills.</p></li>
+<li><p><strong>Innovative Teaching:</strong> Leveraging tools like chatGPT for code generation and modification, students can quickly adapt and enhance their apps, ensuring they stay at the cutting edge of technology and science.</p></li>
+</ul>
+<p>Let’s lead the charge in transforming how epidemiology is taught and researched, making our department a beacon of dynamic, inclusive, and cutting-edge science. I’d love the opportunity to spearhead this initiative and work with you to make this vision a reality.”</p>
+</section>
+<section id="jupyter-books">
+<h2>3 Jupyter-books<a class="headerlink" href="#jupyter-books" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="github">
+<h2>4. GitHub<a class="headerlink" href="#github" title="Permalink to this heading">#</a></h2>
+<p>Repository and deployment</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./act3/part3"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="part3_2.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Normative</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../../bibliography.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Certainty, <em>γ</em> 😃 ⭕️</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#neural-correlates">Neural Correlates</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#philosophical-fit-bacon-aristotle-plato">Philosophical Fit: Bacon, Aristotle, Plato</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#synthesis-and-tension">Synthesis and Tension</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#epilogue-intelligence-progress-vs-wisdom-preservation">Epilogue: Intelligence (Progress) vs. Wisdom (Preservation)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nietzsches-uses-and-abuses">Nietzsche’s Uses and Abuses</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#retake-intelligence-progress-vs-wisdom-preservation-in-a-shifting-landscape">Retake: Intelligence (Progress) vs. Wisdom (Preservation) in a Shifting Landscape</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#postscript-query">Postscript Query</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#response-to-nietzsches-on-the-uses-and-abuses-of-history-for-life">Response to Nietzsche’s <em>On the Uses and Abuses of History for Life</em></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#nietzsches-framework-and-your-reading">Nietzsche’s Framework and Your Reading</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#accuracy-verdict">Accuracy Verdict</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#your-question-is-the-dmn-antiquarian">Your Question: Is the DMN Antiquarian?</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#final-thought">Final Thought</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-murdoch-s">The Murdoch’s</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#james-as-tpn-task-positive-network">James as TPN (Task-Positive Network)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rupert-as-sn-salience-network">Rupert as SN (Salience Network)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lachlan-as-dmn-default-mode-network">Lachlan as DMN (Default Mode Network)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-atlantic">The Atlantic</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#growing-up-murdoch">GROWING UP MURDOCH</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pairs-jh">1 PAIRS@JH</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#elevator-pitch-for-python">Elevator Pitch for Python</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#heres-why">Here’s why:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#elevator-pitch">2 Elevator Pitch</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jupyter-books">3 Jupyter-books</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#github">4. GitHub</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  Copyright © 2025 Zeus
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
